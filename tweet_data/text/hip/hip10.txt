@@ -1,0 +1,9 @@
+🚨 @harmonyprotocol $ONE Governance Proposal🚨
+
+HIP-10: Auto-Delegation of Staking Rewards.
+
+Summary: This proposal is to add an auto-delegate feature for staking rewards.
+
+✍️Talk: https://talk.harmony.one/t/hip-10-auto-delegation-of-staking-rewards/1726/20
+
+#VDaoDotOne

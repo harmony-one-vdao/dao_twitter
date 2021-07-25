@@ -1,0 +1,11 @@
+🚨 @harmonyprotocol $ONE Governance Proposal🚨
+
+HIP-14: Update Staking Portal ER/Uptime Metrics; Add Additional Information
+
+Edit expected return (ER) & uptime display data on the staking portal.
+
+Add additional info for delegators.
+
+✍️Talk: https://talk.harmony.one/t/hip-14-update-staking-portal-er-uptime-metrics-add-additional-information/1824
+
+#VDaoDotOne

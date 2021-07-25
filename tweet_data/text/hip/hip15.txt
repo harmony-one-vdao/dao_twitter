@@ -1,0 +1,11 @@
+🚨 @harmonyprotocol $ONE Governance Proposal🚨
+
+HIP-15: Validator Governance Participation Indicator
+
+Proposal to show validator participation in governance votes on staking dashboard
+
+Increase validator participation in governance
+
+✍️Talk: https://talk.harmony.one/t/hip-15-validator-governance-participation-indicator/1836
+
+#VDaoDotOne
