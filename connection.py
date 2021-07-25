@@ -3,8 +3,8 @@ from includes.config import *
 from includes.tweet_locations import *
 from utils.tools import *
 
+user = "1400948665859051520" # DAO
 
-user = "1400948665859051520"
 api = twitter.Api(
     consumer_key=APIKey,
     consumer_secret=APISecretKey,
@@ -37,9 +37,9 @@ def post_tweets(dry_run=False):
                 print(f'Success!!\n\n{status.text}\n')
         except (FileNotFoundError, twitter.error.TwitterError) as e:
             print(f'ERRROR  ::  {e}\n\n{to_post}\n')
-        sleep(3600)
+        sleep(SLEEP)
 
 
-# get_statuses()
-while True:
-    post_tweets(dry_run=False)
+# # get_statuses()
+# while True:
+#     post_tweets(dry_run=False)
