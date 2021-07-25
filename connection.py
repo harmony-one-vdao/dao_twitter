@@ -28,6 +28,7 @@ def get_statuses():
 def post_tweets(dry_run=False):    
     for to_post, media_path in tweet_data.items():
         print('-'*80)
+        print(f'attempting to post  ::  {to_post}\n with {media_path}')
         try:
             to_post = open_file(to_post)
             l = len(to_post)
