@@ -1,2 +1,5 @@
 # dao_twitter
-asAS
+
+sudo apt update && sudo apt upgrade -y
+apt install python3-pip
+pip install -r requirements.txt
