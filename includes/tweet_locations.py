@@ -1,4 +1,5 @@
 from os.path import join
+from time import sleep 
 
 tweets_dir = join("tweet_data", "text")
 media_dir = join("tweet_data", "media")
@@ -15,7 +16,7 @@ join(tweets_dir, 'HIP', 'hip14.txt'): join(media_dir, 'HIP', 'HIP14.png'),
 join(tweets_dir, 'HIP', 'hip15.txt'): join(media_dir, 'HIP', 'HIP15.png'),
 }
 
-SLEEP = 24 / len(tweet_data.keys())
+SLEEP = 24 / len(tweet_data.keys()) * 60
 print(SLEEP)
 
 # Generate
