@@ -22,7 +22,9 @@ join(tweets_dir, 'generic', 'dao_mission.txt'): join(media_dir, 'generic', 'Dao.
 # HIP Voting
 }
 
-SLEEP = 24 / len(tweet_data.keys()) * 60
+num_tweets = len(tweet_data.keys())
+SLEEP = 24 / num_tweets * 60 * 60
+# print(SLEEP, num_tweets)
 
 # Generate
 # for i in range(7, 16):
