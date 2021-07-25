@@ -6,6 +6,7 @@ media_dir = join("tweet_data", "media")
 
 
 tweet_data = {
+    join(tweets_dir, 'generic', 'dao_mission.txt'): join(media_dir, 'generic', 'Dao.png'),
 join(tweets_dir, 'HIP', 'hip8.txt'): join(media_dir, 'HIP', 'HIP8.png'),
 join(tweets_dir, 'HIP', 'hip9.txt'): join(media_dir, 'HIP', 'HIP9.png'),
 join(tweets_dir, 'HIP', 'hip10.txt'): join(media_dir, 'HIP', 'HIP10.png'),
@@ -14,6 +15,7 @@ join(tweets_dir, 'HIP', 'hip12.txt'): join(media_dir, 'HIP', 'HIP12.png'),
 join(tweets_dir, 'HIP', 'hip13.txt'): join(media_dir, 'HIP', 'HIP13.png'),
 join(tweets_dir, 'HIP', 'hip14.txt'): join(media_dir, 'HIP', 'HIP14.png'),
 join(tweets_dir, 'HIP', 'hip15.txt'): join(media_dir, 'HIP', 'HIP15.png'),
+
 }
 
 SLEEP = 24 / len(tweet_data.keys()) * 60
