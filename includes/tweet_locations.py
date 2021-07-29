@@ -1,5 +1,5 @@
 from os.path import join
-from time import sleep 
+from time import sleep
 
 tweets_dir = join("tweet_data", "text")
 media_dir = join("tweet_data", "media")
@@ -7,24 +7,25 @@ media_dir = join("tweet_data", "media")
 
 tweet_data = {
     # HIP Proposals
-    join(tweets_dir, 'hip', 'hip13.txt'): join(media_dir, 'HIP', 'HIP13.png'),
-join(tweets_dir, 'hip', 'hip8.txt'): join(media_dir, 'HIP', 'HIP8.png'),
-join(tweets_dir, 'hip', 'hip9.txt'): join(media_dir, 'HIP', 'HIP9.png'),
-join(tweets_dir, 'hip', 'hip10.txt'): join(media_dir, 'HIP', 'HIP10.png'),
-join(tweets_dir, 'hip', 'hip11.txt'): join(media_dir, 'HIP', 'HIP11.png'),
-join(tweets_dir, 'hip', 'hip12.txt'): join(media_dir, 'HIP', 'HIP12.png'),
-join(tweets_dir, 'hip', 'hip14.txt'): join(media_dir, 'HIP', 'HIP14.png'),
-join(tweets_dir, 'hip', 'hip15.txt'): join(media_dir, 'HIP', 'HIP15.png'),
-
-# generic
-join(tweets_dir, 'generic', 'dao_mission.txt'): join(media_dir, 'generic', 'Dao.png'),
-
-# HIP Voting
+    join(tweets_dir, "hip", "hip13.txt"): join(media_dir, "HIP", "HIP13.png"),
+    join(tweets_dir, "hip", "hip8.txt"): join(media_dir, "HIP", "HIP8.png"),
+    join(tweets_dir, "hip", "hip9.txt"): join(media_dir, "HIP", "HIP9.png"),
+    join(tweets_dir, "hip", "hip10.txt"): join(media_dir, "HIP", "HIP10.png"),
+    join(tweets_dir, "hip", "hip11.txt"): join(media_dir, "HIP", "HIP11.png"),
+    join(tweets_dir, "hip", "hip12.txt"): join(media_dir, "HIP", "HIP12.png"),
+    join(tweets_dir, "hip", "hip14.txt"): join(media_dir, "HIP", "HIP14.png"),
+    join(tweets_dir, "hip", "hip15.txt"): join(media_dir, "HIP", "HIP15.png"),
+    # generic
+    join(tweets_dir, "generic", "dao_mission.txt"): join(
+        media_dir, "generic", "Dao.png"
+    ),
+    # HIP Voting
 }
 
 num_tweets = len(tweet_data.keys())
-SLEEP = 24 / num_tweets * 60 * 60
-# print(SLEEP, num_tweets)
+SLEEP = round(48 / num_tweets * 60 * 60)
+hours_per_tweet = round(SLEEP / 60 / 60)
+print(SLEEP, num_tweets, hours_per_tweet)
 
 # Generate
 # for i in range(7, 16):

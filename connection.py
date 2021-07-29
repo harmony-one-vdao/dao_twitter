@@ -3,7 +3,7 @@ from includes.config import *
 from includes.tweet_locations import *
 from utils.tools import *
 
-user = "1400948665859051520" # DAO
+user = "1400948665859051520"  # DAO
 
 api = twitter.Api(
     consumer_key=APIKey,
@@ -25,20 +25,20 @@ def get_statuses():
     return statuses
 
 
-def post_tweets(dry_run=False):    
+def post_tweets(dry_run=False):
     for to_post, media_path in tweet_data.items():
-        print('-'*80)
-        print(f'attempting to post  ::  {to_post}\n with {media_path}')
+        print("-" * 80)
+        print(f"attempting to post  ::  {to_post}\n with {media_path}")
         try:
             to_post = open_file(to_post)
             l = len(to_post)
             print(l)
             if not dry_run:
                 status = api.PostUpdate(to_post, media=media_path)
-                print(f'Success!!\n\n{status.text}\n')
+                print(f"Success!!\n\n{status.text}\n")
         except (FileNotFoundError, twitter.error.TwitterError) as e:
-            print(f'ERRROR  ::  {e}\n\n{to_post}\n')
-        print(f'sleeping for {SLEEP} seconds..')
+            print(f"ERRROR  ::  {e}\n\n{to_post}\n")
+        print(f"sleeping for {SLEEP} seconds..")
         sleep(SLEEP)
 
 
