@@ -28,7 +28,7 @@ tweet_data = {
         media_dir, "generic", "Dao.png"
         ),
     join(tweets_dir, "generic", "become_validator.txt"): join(
-        media_dir, "generic", "new_validator.jpg"
+        media_dir, "generic", "new_validators.jpg"
         ),    
      # medium articles
     join(tweets_dir, "medium_articles", "volumes_expand.txt"): None,
