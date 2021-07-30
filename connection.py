@@ -5,6 +5,9 @@ from includes.config import *
 from includes.tweet_locations import *
 from utils.tools import *
 
+import logging
+logging.basicConfig(format='[%(levelname)s] - %(message)s', level=logging.INFO)
+
 user = "1400948665859051520"  # DAO
 
 api = twitter.Api(
@@ -20,34 +23,35 @@ def get_statuses():
     statuses = api.GetUserTimeline(user)
 
     for s in statuses:
-        print(s.full_text)
-        print(s)
-        print()
+        logging.info(s.full_text)
+        logging.info(s)
+        logging.info()
 
     return statuses
 
 
-def post_tweets(dry_run=False):
+def post_tweets(dry_run=False):    
     _tweets = [x for x in tweet_data.keys()]
     shuffle(_tweets)
     for text in _tweets:
-        print(text)
         media_path = tweet_data[text]
-        print("-" * 80)
-        print(f"attempting to post  ::  {text}\n with {media_path}")
+        logging.info("-" * 80)
+        logging.info(f'attempting to post  ::  {text}  with {"No Media added" if not media_path else media_path}')
         try:
             to_post = open_file(text)
             l = len(to_post)
-            print(l)
+            logging.info(f'Tweet Length: {l}')
             if not dry_run:
                 status = api.PostUpdate(to_post, media=media_path)
-                print(f"Success!!\n\n{status.text}\n")
+                logging.info(f"Success!!\n\n{status.text}\n")
         except (FileNotFoundError, twitter.error.TwitterError) as e:
-            print(f"ERRROR  ::  {e}\n\n{to_post}\n")
-        print(f"sleeping for {SLEEP} seconds..")
+            logging.error(f"ERROR  ::  {e}\n\n{to_post}\n")
+        logging.info(f"sleeping for {SLEEP} seconds..")
         sleep(SLEEP)
 
 
 # # get_statuses()
 while True:
+    logging.info('Starting New Tweet Cycle')
     post_tweets(dry_run=False)
+    logging.info('Ending Tweet Cycle.. Preparing new...')
