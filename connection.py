@@ -1,3 +1,5 @@
+from random import shuffle
+
 import twitter
 from includes.config import *
 from includes.tweet_locations import *
@@ -26,11 +28,15 @@ def get_statuses():
 
 
 def post_tweets(dry_run=False):
-    for to_post, media_path in tweet_data.items():
+    _tweets = [x for x in tweet_data.keys()]
+    shuffle(_tweets)
+    for text in _tweets:
+        print(text)
+        media_path = tweet_data[text]
         print("-" * 80)
-        print(f"attempting to post  ::  {to_post}\n with {media_path}")
+        print(f"attempting to post  ::  {text}\n with {media_path}")
         try:
-            to_post = open_file(to_post)
+            to_post = open_file(text)
             l = len(to_post)
             print(l)
             if not dry_run:

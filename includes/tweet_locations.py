@@ -15,11 +15,28 @@ tweet_data = {
     join(tweets_dir, "hip", "hip12.txt"): join(media_dir, "HIP", "HIP12.png"),
     join(tweets_dir, "hip", "hip14.txt"): join(media_dir, "HIP", "HIP14.png"),
     join(tweets_dir, "hip", "hip15.txt"): join(media_dir, "HIP", "HIP15.png"),
+    
     # generic
     join(tweets_dir, "generic", "dao_mission.txt"): join(
         media_dir, "generic", "Dao.png"
-    ),
-    # HIP Voting
+        ),
+
+    join(tweets_dir, "generic", "agenda.txt"): join(
+        media_dir, "generic", "Dao.png"
+        ),
+        
+    join(tweets_dir, "generic", "goals.txt"): join(
+        media_dir, "generic", "Dao.png"
+        ),
+    join(tweets_dir, "generic", "become_validator.txt"): join(
+        media_dir, "generic", "new_validator.jpg"
+        ),    
+     # medium articles
+    join(tweets_dir, "medium_articles", "volumes_expand.txt"): None,
+    join(tweets_dir, "medium_articles", "what_is_vdao.txt"): None,
+    join(tweets_dir, "medium_articles", "updating_node.txt"): None,
+
+    # HIP Voting links
 }
 
 num_tweets = len(tweet_data.keys())
