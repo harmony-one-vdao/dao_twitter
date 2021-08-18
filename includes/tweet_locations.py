@@ -1,5 +1,7 @@
 from os.path import join
 from time import sleep
+import logging
+logging.basicConfig(format="[%(levelname)s] - %(message)s", level=logging.INFO)
 
 tweets_dir = join("tweet_data", "text")
 media_dir = join("tweet_data", "media")
@@ -31,11 +33,12 @@ tweet_data = {
     # HIP Voting links
 }
 
+# tweet_data = {join(tweets_dir, "hip", "hip16.txt"): join(media_dir, "HIP", "HIP16.png"),}
+
 num_tweets = len(tweet_data.keys())
-num_days_cycle = 2.5
+num_days_cycle = 3
 hours_between_tweets = (num_days_cycle * 24) / num_tweets
 seconds_between_tweet = hours_between_tweets * 60
-
 
 SLEEP = round(seconds_between_tweet)
 
@@ -50,7 +53,7 @@ p = {
 
 for k, v in p.items():
     # print(f"{k}  ::  {v}")
-    print(f"{' '.join(k.split('_')).title():<50}  ::   {v:<30}")
+    logging.info(f"{' '.join(k.split('_')).title():<50}  ::   {v:<30}")
 
 
 # Generate

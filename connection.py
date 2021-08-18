@@ -7,8 +7,6 @@ from utils.tools import *
 
 import logging
 
-logging.basicConfig(format="[%(levelname)s] - %(message)s", level=logging.INFO)
-
 user = "1400948665859051520"  # DAO
 
 api = twitter.Api(
