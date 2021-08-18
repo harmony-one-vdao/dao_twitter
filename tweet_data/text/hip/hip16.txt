@@ -1,0 +1,11 @@
+🚨 @harmonyprotocol $ONE Governance Proposal🚨
+
+HIP 16: Reducing BLS keys
+
+Proposing a method to further limit the amount of BLS keys a validator can have.
+
+This will increase the number of validators and maintain decentralisation.
+
+✍️Talk: https://talk.harmony.one/t/hip-16-reducing-bls-keys/2014
+
+#VDaoDotOne

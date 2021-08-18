@@ -6,7 +6,8 @@ from includes.tweet_locations import *
 from utils.tools import *
 
 import logging
-logging.basicConfig(format='[%(levelname)s] - %(message)s', level=logging.INFO)
+
+logging.basicConfig(format="[%(levelname)s] - %(message)s", level=logging.INFO)
 
 user = "1400948665859051520"  # DAO
 
@@ -30,17 +31,19 @@ def get_statuses():
     return statuses
 
 
-def post_tweets(dry_run=False):    
+def post_tweets(dry_run=False):
     _tweets = [x for x in tweet_data.keys()]
     shuffle(_tweets)
     for text in _tweets:
         media_path = tweet_data[text]
         logging.info("-" * 80)
-        logging.info(f'attempting to post  ::  {text}  with {"No Media added" if not media_path else media_path}')
+        logging.info(
+            f'attempting to post  ::  {text}  with {"No Media added" if not media_path else media_path}'
+        )
         try:
             to_post = open_file(text)
             l = len(to_post)
-            logging.info(f'Tweet Length: {l}')
+            logging.info(f"Tweet Length: {l}")
             if not dry_run:
                 status = api.PostUpdate(to_post, media=media_path)
                 logging.info(f"Success!!\n\n{status.text}\n")
@@ -52,6 +55,6 @@ def post_tweets(dry_run=False):
 
 # # get_statuses()
 while True:
-    logging.info('Starting New Tweet Cycle')
+    logging.info("Starting New Tweet Cycle")
     post_tweets(dry_run=False)
-    logging.info('Ending Tweet Cycle.. Preparing new...')
+    logging.info("Ending Tweet Cycle.. Preparing new...")
