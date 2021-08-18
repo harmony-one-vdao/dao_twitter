@@ -38,15 +38,15 @@ tweet_data = {
 num_tweets = len(tweet_data.keys())
 num_days_cycle = 3
 hours_between_tweets = (num_days_cycle * 24) / num_tweets
-seconds_between_tweet = hours_between_tweets * 60
+seconds_between_tweets = hours_between_tweets * 60 * 60
 
-SLEEP = round(seconds_between_tweet)
+SLEEP = round(seconds_between_tweets)
 
 p = {
     "num_days_cycle": num_days_cycle,
     "hours_between_tweets": hours_between_tweets,
     "num_tweets": num_tweets,
-    "seconds_between_tweet": seconds_between_tweet,
+    "seconds_between_tweets": seconds_between_tweets,
     "SLEEP (secs)": SLEEP,
 }
 
