@@ -1,6 +1,7 @@
 from os.path import join
 from time import sleep
 import logging
+
 logging.basicConfig(format="[%(levelname)s] - %(message)s", level=logging.INFO)
 
 num_days_cycle = 3
@@ -19,7 +20,8 @@ tweet_data = {
     join(tweets_dir, "hip", "hip14.txt"): join(media_dir, "HIP", "HIP14.png"),
     join(tweets_dir, "hip", "hip15.txt"): join(media_dir, "HIP", "HIP15.png"),
     join(tweets_dir, "hip", "hip16.txt"): join(media_dir, "HIP", "HIP16.png"),
-   
+    # DAO Specific
+    join(tweets_dir, "hip", "charter.txt"): join(media_dir, "HIP", "charter.png"),
     # generic
     join(tweets_dir, "generic", "dao_mission.txt"): join(
         media_dir, "generic", "Dao.png"
@@ -30,7 +32,6 @@ tweet_data = {
         media_dir, "generic", "new_validators.jpg"
     ),
     join(tweets_dir, "generic", "connect.txt"): join(media_dir, "generic", "Dao.png"),
-
     # medium articles
     join(tweets_dir, "medium_articles", "volumes_expand.txt"): None,
     join(tweets_dir, "medium_articles", "what_is_vdao.txt"): None,
@@ -39,7 +40,7 @@ tweet_data = {
 }
 
 # tweet_data = {
-#     join(tweets_dir, "generic", "connect.txt"): join(media_dir, "generic", "Dao.png"),
+# join(tweets_dir, "hip", "charter.txt"): join(media_dir, "HIP", "charter.png"),
 #     }
 
 num_tweets = len(tweet_data.keys())
