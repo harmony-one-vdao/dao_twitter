@@ -20,8 +20,10 @@ tweet_data = {
     join(tweets_dir, "hip", "hip14.txt"): join(media_dir, "HIP", "HIP14.png"),
     join(tweets_dir, "hip", "hip15.txt"): join(media_dir, "HIP", "HIP15.png"),
     join(tweets_dir, "hip", "hip16.txt"): join(media_dir, "HIP", "HIP16.png"),
+    
     # DAO Specific
     join(tweets_dir, "hip", "charter.txt"): join(media_dir, "HIP", "charter.png"),
+
     # generic
     join(tweets_dir, "generic", "dao_mission.txt"): join(
         media_dir, "generic", "Dao.png"

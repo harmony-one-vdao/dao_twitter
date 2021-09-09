@@ -1,10 +1,14 @@
-🚨 @harmonyprotocol $ONE Governance Proposal 🚨
+🚨 Validator DAO Vote 🚨
 
-This proposal is to ratify the Validator DAO Charter.
+Vote to ratify the Validator DAO Charter.
 
-To provide official rules and governance by the community for the Validator DAO
+🗓️ Start: Sep 16, 2021
+🗓️ End:   Sep 30, 2021 
 
 📗 Read: docs.google.com/document/d/118jdIc5IKHzVonVigPeLe0lIUxC5YCjFWhD1VuXyiUg
+
 ✍️ Talk: talk.harmony.one/t/validator-dao-charter-ratification/2128
 
-#VDaoDotOne
+🗳️Vote: https://gov.harmony.one/#/dao-mainnet/proposal/Qmb5TkfWYo2pUhkuU5F1LdbUJwdRAwpe1pX1pQn9ozYY2N
+
+#VDaoDotOne @harmonyprotocol $ONE
