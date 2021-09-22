@@ -1,15 +1,14 @@
 from random import shuffle
 
 import twitter
-from includes.config import *
 from includes.tweet_locations import *
-from utils.tools import *
+from post_facebook import *
 
 import logging
 
-user = "1400948665859051520"  # DAO
+twitter_user = "1400948665859051520"  # DAO
 
-api = twitter.Api(
+twitter_api = twitter.Api(
     consumer_key=APIKey,
     consumer_secret=APISecretKey,
     access_token_key=AccessTokenKey,
@@ -19,7 +18,7 @@ api = twitter.Api(
 
 
 def get_statuses():
-    statuses = api.GetUserTimeline(user)
+    statuses = twitter_api.GetUserTimeline(twitter_user)
 
     for s in statuses:
         logging.info(s.full_text)
@@ -29,7 +28,7 @@ def get_statuses():
     return statuses
 
 
-def post_tweets(dry_run=False):
+def post_to_twitter_facebook(dry_run=False):
     _tweets = [x for x in tweet_data.keys()]
     shuffle(_tweets)
     for text in _tweets:
@@ -43,7 +42,7 @@ def post_tweets(dry_run=False):
             l = len(to_post)
             logging.info(f"Tweet Length: {l}")
             if not dry_run:
-                status = api.PostUpdate(to_post, media=media_path)
+                status = twitter_api.PostUpdate(to_post, media=media_path)
                 logging.info(f"Success!!\n\n{status.text}\n")
         except (FileNotFoundError, twitter.error.TwitterError) as e:
             logging.error(f"ERROR  ::  {e}\n\n{to_post}\n")
@@ -54,5 +53,5 @@ def post_tweets(dry_run=False):
 # # get_statuses()
 while True:
     logging.info("Starting New Tweet Cycle")
-    post_tweets(dry_run=False)
+    post_to_twitter_facebook(dry_run=False)
     logging.info("Ending Tweet Cycle.. Preparing new...")
