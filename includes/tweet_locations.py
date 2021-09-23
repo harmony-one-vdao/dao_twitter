@@ -29,11 +29,11 @@ tweet_data = {
         media_dir, "generic", "Dao.png"
     ),
     join(tweets_dir, "generic", "agenda.txt"): join(media_dir, "generic", "Dao.png"),
-    join(tweets_dir, "generic", "goals.txt"): join(media_dir, "generic", "Dao.png"),
     join(tweets_dir, "generic", "become_validator.txt"): join(
         media_dir, "generic", "new_validators.jpg"
     ),
     join(tweets_dir, "generic", "connect.txt"): join(media_dir, "generic", "Dao.png"),
+    
     # medium articles
     join(tweets_dir, "medium_articles", "volumes_expand.txt"): None,
     join(tweets_dir, "medium_articles", "what_is_vdao.txt"): None,
