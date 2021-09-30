@@ -38,12 +38,15 @@ tweet_data = {
     join(tweets_dir, "medium_articles", "volumes_expand.txt"): None,
     join(tweets_dir, "medium_articles", "what_is_vdao.txt"): None,
     join(tweets_dir, "medium_articles", "updating_node.txt"): None,
-    # HIP Voting links
+
+    # Elections
+    join(tweets_dir, "election", "call_for_candidates.txt"): join(media_dir, "election", "call_for_candidates.png"),
+
 }
 
 # tweet_data = {
 
-#     join(tweets_dir, "generic", "connect.txt"): join(media_dir, "generic", "Dao.png"),
+#     join(tweets_dir, "election", "call_for_candidates.txt"): join(media_dir, "election", "call_for_candidates.png"),
 
 #    }
 
