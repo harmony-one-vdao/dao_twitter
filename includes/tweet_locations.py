@@ -22,7 +22,7 @@ tweet_data = {
     join(tweets_dir, "hip", "hip16.txt"): join(media_dir, "HIP", "HIP16.png"),
     
     # DAO Specific
-    join(tweets_dir, "hip", "charter.txt"): join(media_dir, "HIP", "charter.png"),
+    # join(tweets_dir, "hip", "charter.txt"): join(media_dir, "HIP", "charter.png"),
 
     # generic
     join(tweets_dir, "generic", "dao_mission.txt"): join(
@@ -42,8 +42,10 @@ tweet_data = {
 }
 
 # tweet_data = {
-# join(tweets_dir, "hip", "charter.txt"): join(media_dir, "HIP", "charter.png"),
-#     }
+
+#     join(tweets_dir, "generic", "connect.txt"): join(media_dir, "generic", "Dao.png"),
+
+#    }
 
 num_tweets = len(tweet_data.keys())
 hours_between_tweets = (num_days_cycle * 24) / num_tweets
