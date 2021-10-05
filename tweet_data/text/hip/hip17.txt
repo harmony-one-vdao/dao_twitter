@@ -4,6 +4,6 @@ HIP-17: Blacklist for malicious ONE Wallet Addresses
 
 This proposal is to react and blacklist malicious wallets which are used for a rug pull on the harmony network.
 
-✍️Talk: https://talk.harmony.one/t/hip-17-blacklist-for-malicious-one-wallet-addresses/3272
+✍️Talk: talk.harmony.one/t/hip-17-blacklist-for-malicious-one-wallet-addresses/3272
 
 #VDaoDotOne
