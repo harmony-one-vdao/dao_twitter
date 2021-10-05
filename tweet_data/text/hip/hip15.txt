@@ -1,11 +1,11 @@
-🚨 @harmonyprotocol $ONE Governance Proposal🚨
+🚨 Validator DAO Vote 🚨
 
 HIP-15: Validator Governance Participation Indicator
 
-Proposal to show validator participation in governance votes on staking dashboard
+🗓️ Start: Oct 11, 2021
+🗓️ End:   Oct 25, 2021 
 
-Increase validator participation in governance
+✍️Talk: talk.harmony.one/t/hip-15-validator-governance-participation-indicator/1836
+🗳️Vote: gov.harmony.one/#/dao-mainnet/proposal/QmRteYUE2RAXciDJHGefKCNEpwpV6tXwYzhkoXCwtfULD6
 
-✍️Talk: https://talk.harmony.one/t/hip-15-validator-governance-participation-indicator/1836
-
-#VDaoDotOne
+@harmonyprotocol $ONE #VDaoDotOne

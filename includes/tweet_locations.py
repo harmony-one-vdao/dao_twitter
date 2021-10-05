@@ -48,7 +48,7 @@ tweet_data = {
 
 # tweet_data = {
 
-#     join(tweets_dir, "election", "call_for_candidates.txt"): join(media_dir, "election", "call_for_candidates.png"),
+#     join(tweets_dir, "hip", "hip15.txt"): join(media_dir, "HIP", "HIP15.png"),
 
 #    }
 
