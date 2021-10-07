@@ -42,7 +42,8 @@ tweet_data = {
     join(tweets_dir, "medium_articles", "updating_node.txt"): None,
 
     # Elections
-    join(tweets_dir, "election", "call_for_candidates.txt"): join(media_dir, "election", "call_for_candidates.png"),
+    # join(tweets_dir, "election", "call_for_candidates.txt"): join(media_dir, "election", "call_for_candidates.png"),
+    join(tweets_dir, "election", "candidates_nominated.txt"): join(media_dir, "generic", "Dao.png"),
 
 }
 
