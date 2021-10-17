@@ -13,7 +13,7 @@ media_dir = join("tweet_data", "media")
 tweet_data = {
     # HIP Proposals
     join(tweets_dir, "hip", "hip13.txt"): join(media_dir, "HIP", "HIP13.png"),
-    join(tweets_dir, "hip", "hip9.txt"): join(media_dir, "HIP", "HIP9.png"),
+    # join(tweets_dir, "hip", "hip9.txt"): join(media_dir, "HIP", "HIP9.png"),
     join(tweets_dir, "hip", "hip10.txt"): join(media_dir, "HIP", "HIP10.png"),
     join(tweets_dir, "hip", "hip11.txt"): join(media_dir, "HIP", "HIP11.png"),
     # join(tweets_dir, "hip", "hip12.txt"): join(media_dir, "HIP", "HIP12.png"),
@@ -43,7 +43,8 @@ tweet_data = {
 
     # Elections
     # join(tweets_dir, "election", "call_for_candidates.txt"): join(media_dir, "election", "call_for_candidates.png"),
-    join(tweets_dir, "election", "candidates_nominated.txt"): join(media_dir, "generic", "Dao.png"),
+    # join(tweets_dir, "election", "candidates_nominated.txt"): join(media_dir, "election", "collage.jpg"),
+    # join(tweets_dir, "election", "candidates_vote.txt"): join(media_dir, "election", "collage.jpg"),
 
 }
 
