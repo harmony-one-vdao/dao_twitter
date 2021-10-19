@@ -1,0 +1,9 @@
+🚨 @harmonyprotocol $ONE Governance Proposal🚨
+
+HIP-18: allowlist for external leaders
+
+Allow external validators identified by the BLSkeys to be the leader of the network
+
+✍️Talk: talk.harmony.one/t/hip-18-allowlist-for-external-leaders/4329
+
+#VDaoDotOne

@@ -21,6 +21,8 @@ tweet_data = {
     join(tweets_dir, "hip", "hip15.txt"): join(media_dir, "HIP", "HIP15.png"),
     join(tweets_dir, "hip", "hip16.txt"): join(media_dir, "HIP", "HIP16.png"),
         join(tweets_dir, "hip", "hip17.txt"): join(media_dir, "HIP", "HIP17.png"),
+        join(tweets_dir, "hip", "hip18.txt"): join(media_dir, "HIP", "HIP18.png"),
+        join(tweets_dir, "hip", "hip19.txt"): join(media_dir, "HIP", "HIP19.png"),
 
     
     # DAO Specific
@@ -50,7 +52,7 @@ tweet_data = {
 
 # tweet_data = {
 
-#         join(tweets_dir, "hip", "hip9.txt"): join(media_dir, "HIP", "HIP9.png"),
+#         join(tweets_dir, "hip", "hip19.txt"): join(media_dir, "HIP", "HIP19.png"),
 
 
 #    }

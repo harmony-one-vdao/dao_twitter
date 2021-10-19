@@ -1,0 +1,9 @@
+🚨 @harmonyprotocol $ONE Governance Proposal🚨
+
+HIP-19: 100% external voting power and 100% external slots
+
+Completely externalize the validators and voting power to have a fully decentralized network.
+
+✍️Talk: talk.harmony.one/t/hip-19-100-external-voting-power-and-100-external-slots/4330
+
+#VDaoDotOne
