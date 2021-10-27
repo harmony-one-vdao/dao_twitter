@@ -1,14 +1,15 @@
 # dao_twitter
 
 # install
-sudo apt update && sudo apt upgrade -y
-apt install python3-pip
-pip install -r requirements.txt
-python3 connection.py
+`sudo apt update && sudo apt upgrade -y`
+`apt install python3-pip`
+`pip install -r requirements.txt`
+`python3 connection.py`
 
 
 
 # create systemd
+``` bash 
 
 cat<<-EOF > /etc/systemd/system/twitter.service
 [Unit]
@@ -31,12 +32,13 @@ LimitNPROC=65536
 WantedBy=multi-user.target
 EOF
 
+```
 
 
-sudo systemctl daemon-reload
-sudo chmod 755 /etc/systemd/system/twitter.service
-sudo systemctl enable twitter.service
-sudo service twitter start 
-sudo service twitter status
+`sudo systemctl daemon-reload`
+`sudo chmod 755 /etc/systemd/system/twitter.service`
+`sudo systemctl enable twitter.service`
+`sudo service twitter start `
+`sudo service twitter status`
 
-tail -f /var/log/syslog
+`tail -f /var/log/syslog`
