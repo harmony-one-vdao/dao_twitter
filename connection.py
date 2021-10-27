@@ -2,7 +2,11 @@ from random import shuffle
 
 import twitter
 from includes.tweet_locations import *
-from post_facebook import *
+from includes.config import *
+from utils.tools import *
+
+# from post_facebook import *
+
 
 import logging
 

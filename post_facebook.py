@@ -26,8 +26,3 @@ r = requests.post(post_url, data=payload)
 print(r.json())
 
 
-# Total = 425.78
-# Vat = 22
-# netAmount = Total / (1 + (Vat / 100))
-# print(netAmount)
-# >> 349

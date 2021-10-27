@@ -1,2 +1,3 @@
 python-twitter
 facebook
+python-dotenv
