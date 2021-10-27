@@ -48,4 +48,8 @@ EOF
 
 `sudo service twitter status`
 
+
+# Check Logs
 `tail -f /var/log/syslog`
+
+
