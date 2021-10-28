@@ -54,7 +54,7 @@ tweet_data = {
 
 # tweet_data = {
 
-#         join(tweets_dir, "hip", "hip19.txt"): join(media_dir, "HIP", "HIP19.png"),
+#         join(tweets_dir, "hip", "hip14.txt"): join(media_dir, "HIP", "HIP14.png"),
 
 
 #    }
