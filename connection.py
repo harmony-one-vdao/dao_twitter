@@ -45,5 +45,5 @@ def post_to_twitter_facebook(dry_run=False):
 # # get_statuses()
 while True:
     logging.info("Starting New Tweet Cycle")
-    post_to_twitter_facebook(dry_run=False)
+    post_to_twitter_facebook(dry_run=True)
     logging.info("Ending Tweet Cycle.. Preparing new...")
