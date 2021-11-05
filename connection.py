@@ -10,8 +10,6 @@ from utils.tools import *
 
 import logging
 
-twitter_user = "1400948665859051520"  # DAO
-
 twitter_api = twitter.Api(
     consumer_key=APIKey,
     consumer_secret=APISecretKey, 
@@ -20,16 +18,6 @@ twitter_api = twitter.Api(
     tweet_mode="extended",
 )
 
-
-def get_statuses():
-    statuses = twitter_api.GetUserTimeline(twitter_user)
-
-    for s in statuses:
-        logging.info(s.full_text)
-        logging.info(s)
-        logging.info()
-
-    return statuses
 
 
 def post_to_twitter_facebook(dry_run=False):
