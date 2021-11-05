@@ -11,9 +11,8 @@ import logging
 
 twitter_api = twitter.Api(
     consumer_key=APIKey,
-    consumer_secret=APISecretKey, 
+    consumer_secret=APISecretKey,
     access_token_key=AccessTokenKey,
     access_token_secret=AccessTokenSecret,
     tweet_mode="extended",
 )
-

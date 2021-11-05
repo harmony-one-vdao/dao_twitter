@@ -1,5 +1,6 @@
 from connection import *
 
+
 def post_to_twitter_facebook(dry_run: bool = False) -> None:
     _tweets = [x for x in tweet_data.keys()]
     shuffle(_tweets)

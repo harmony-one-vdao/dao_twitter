@@ -3,7 +3,7 @@ from utils.tools import *
 import requests
 import logging
 
-msg = '''
+msg = """
 🚨 @harmonyprotocol $ONE Governance Proposal🚨
 
 HIP-15: Validator Governance Participation Indicator
@@ -16,13 +16,8 @@ Increase validator participation in governance
 
 #VDaoDotOne
 
-'''
-post_url = f'https://graph.facebook.com/{PAGE_ID}/feed'
-payload = {
-'message': msg,
-'access_token': FB_ACCESS_TOKEN
-}
+"""
+post_url = f"https://graph.facebook.com/{PAGE_ID}/feed"
+payload = {"message": msg, "access_token": FB_ACCESS_TOKEN}
 r = requests.post(post_url, data=payload)
 print(r.json())
-
-
