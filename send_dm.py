@@ -27,8 +27,8 @@ def send_direct_message(_id: int, msg: str) -> None:
         msg = twitter_api.PostDirectMessage(msg, _id, return_json=True)
         return msg
     except twitter.error.TwitterError as e:
-        return {'errors': e}
-    
+        return {"errors": e}
+
 
 def run(hip: str) -> None:
     msg = get_message(hip)
@@ -87,6 +87,7 @@ def save_error_or_failed_dms(hip: str, _type: str, data: list) -> None:
     with open(dm_list, "w") as f:
         for x in data:
             f.write(f"{x}\n")
+
 
 if __name__ == "__main__":
     for hip in hips:
