@@ -15,6 +15,7 @@ def get_users(hip: str) -> dict:
     users = open_file(dm_list).split("\n")
     rtn = {}
     for x in users:
+        x = x.split('@')[-1]
         try:
             rtn.update({x: twitter_api.GetUser(screen_name=x).id})
         except twitter.error.TwitterError as e:
@@ -89,7 +90,7 @@ def save_error_or_failed_dms(hip: str, _type: str, data: list) -> None:
     dm_list = join("tweet_data", "dm_list", f"{hip}{sep}{_type}.txt")
     with open(dm_list, "w") as f:
         for x in data:
-            f.write(f"{x}\n")
+            f.write(f"@{x}\n")
 
 
 if __name__ == "__main__":
