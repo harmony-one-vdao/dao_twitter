@@ -2,6 +2,8 @@ from connection import *
 
 hips = ("hip14", "hip15")
 
+DELAY = 5
+TAKE_A_BREAK = 1200
 
 def get_message(hip: str) -> str:
     location = join(tweets_dir, "hip", f"{hip}.txt")
@@ -55,8 +57,8 @@ def run(hip: str) -> None:
             ):  # This request looks like it might be automated.
                 retry.append(uname)
                 sleep(
-                    1200
-                )  # take a break from automation as twitter does not like it..
+                    TAKE_A_BREAK
+                )  # take a break from automation if twitter does not like it..
 
             elif (
                 result["errors"][0]["code"] == 349
@@ -75,7 +77,7 @@ def run(hip: str) -> None:
                 logging.error(f"Dunno what happened, adding to failures..\n{result}\n")
                 retry.append(uname)
 
-        sleep(10)  # arbitrary time to pause between messages
+        sleep(DELAY)  # arbitrary time to pause between messages
 
     save_error_or_failed_dms('', hip, retry)
     save_error_or_failed_dms(hip, "cannot_msg", cannot_msg)
