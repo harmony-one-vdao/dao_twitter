@@ -2,7 +2,9 @@ from connection import *
 
 hips = ("hip14", "hip15")
 
+# Delay inbetween tweets
 DELAY = 5
+# Big sleep if Twitter gives a Spam error.
 TAKE_A_BREAK = 1200
 
 def get_message(hip: str) -> str:
