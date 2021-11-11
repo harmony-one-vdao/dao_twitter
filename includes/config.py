@@ -9,8 +9,8 @@ APISecretKey = environ["APISecretKey"]
 AccessTokenKey = environ["AccessTokenKey"]
 AccessTokenSecret = environ["AccessTokenSecret"]
 
-# Facebook
-BearerToken = environ["BearerToken"]
-BearerTokenDaoApp = environ["BearerTokenDaoApp"]
-FB_ACCESS_TOKEN = environ["FB_ACCESS_TOKEN"]
-PAGE_ID = r"265896568595660"
+# # Facebook
+# BearerToken = environ["BearerToken"]
+# BearerTokenDaoApp = environ["BearerTokenDaoApp"]
+# FB_ACCESS_TOKEN = environ["FB_ACCESS_TOKEN"]
+# PAGE_ID = r"265896568595660"
