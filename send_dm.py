@@ -76,14 +76,17 @@ def run(hip: str) -> None:
 
         sleep(10)  # arbitrary time to pause between messages
 
-    save_error_or_failed_dms(hip, hip, retry)
+    save_error_or_failed_dms('', hip, retry)
     save_error_or_failed_dms(hip, "cannot_msg", cannot_msg)
     save_error_or_failed_dms(hip, "user_not_found", user_not_found)
     save_error_or_failed_dms(hip, "notFollowed_by", not_followed_by)
 
 
 def save_error_or_failed_dms(hip: str, _type: str, data: list) -> None:
-    dm_list = join("tweet_data", "dm_list", f"{hip}-{_type}.txt")
+    sep = '-'
+    if not hip:
+        sep = ''
+    dm_list = join("tweet_data", "dm_list", f"{hip}{sep}{_type}.txt")
     with open(dm_list, "w") as f:
         for x in data:
             f.write(f"{x}\n")
