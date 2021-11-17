@@ -7,6 +7,7 @@ DELAY = 1
 # Big sleep if Twitter gives a Spam error.
 TAKE_A_BREAK = 1200
 
+
 def get_message(hip: str) -> str:
     location = join(tweets_dir, "hip", f"{hip}.txt")
     message = open_file(location, remove_links=True)
@@ -20,12 +21,12 @@ def get_users(hip: str) -> dict:
     rtn = {}
     for x in users:
         if x:
-            x = x.split('@')[-1]
+            x = x.split("@")[-1]
             try:
                 rtn.update({x: twitter_api.GetUser(screen_name=x).id})
             except twitter.error.TwitterError as e:
                 logging.error(f"Problem with User [ {x} ]\n{e}")
-                rtn.update({x:0})
+                rtn.update({x: 0})
     return rtn
 
 
@@ -83,16 +84,16 @@ def run(hip: str) -> None:
 
         sleep(DELAY)  # arbitrary time to pause between messages
 
-    save_error_or_failed_dms('', hip, retry)
+    save_error_or_failed_dms("", hip, retry)
     save_error_or_failed_dms(hip, "cannot_msg", cannot_msg)
     save_error_or_failed_dms(hip, "user_not_found", user_not_found)
     save_error_or_failed_dms(hip, "notFollowed_by", not_followed_by)
 
 
 def save_error_or_failed_dms(hip: str, _type: str, data: list) -> None:
-    sep = '-'
+    sep = "-"
     if not hip:
-        sep = ''
+        sep = ""
     dm_list = join("tweet_data", "dm_list", f"{hip}{sep}{_type}.txt")
     with open(dm_list, "w") as f:
         for x in data:

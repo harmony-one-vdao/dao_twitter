@@ -8,4 +8,4 @@ HIP-15: Validator Governance Participation Indicator
 ✍️Talk: talk.harmony.one/t/hip-15-validator-governance-participation-indicator/1836
 🗳️Vote: gov.harmony.one/#/staking-mainnet/proposal/QmewxBWGsDNAMTC4q6DAzPwUkSLDpjDAqBc6JuTTZiA2D4
 
-@harmonyprotocol $ONE #VDaoDotOne
+@harmonyprotocol $ONE 💙#VDaoDotOne💙

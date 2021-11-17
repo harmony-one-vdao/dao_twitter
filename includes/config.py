@@ -2,7 +2,7 @@ from os import environ
 from dotenv import load_dotenv, find_dotenv
 
 d = load_dotenv(find_dotenv())
-print(f'Env file Found?  ::  {d}')
+print(f"Env file Found?  ::  {d}")
 
 # Twitter
 APIKey = environ["APIKey"]

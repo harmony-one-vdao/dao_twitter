@@ -23,6 +23,7 @@ tweet_data = {
     join(tweets_dir, "hip", "hip17.txt"): join(media_dir, "HIP", "HIP17.png"),
     join(tweets_dir, "hip", "hip18.txt"): join(media_dir, "HIP", "HIP18.png"),
     join(tweets_dir, "hip", "hip19.txt"): join(media_dir, "HIP", "HIP19.png"),
+    join(tweets_dir, "hip", "hip20.txt"): join(media_dir, "HIP", "HIP20.png"),
     # DAO Specific
     # join(tweets_dir, "hip", "charter.txt"): join(media_dir, "HIP", "charter.png"),
     # generic
@@ -38,6 +39,7 @@ tweet_data = {
     join(tweets_dir, "medium_articles", "volumes_expand.txt"): None,
     join(tweets_dir, "medium_articles", "what_is_vdao.txt"): None,
     join(tweets_dir, "medium_articles", "updating_node.txt"): None,
+    join(tweets_dir, "medium_articles", "help_i_stopped_signing.txt"): None,
     # Elections
     # join(tweets_dir, "election", "call_for_candidates.txt"): join(media_dir, "election", "call_for_candidates.png"),
     # join(tweets_dir, "election", "candidates_nominated.txt"): join(media_dir, "election", "collage.jpg"),
@@ -48,8 +50,8 @@ tweet_data = {
 
 # tweet_data = {
 
-#         join(tweets_dir, "hip", "hip15.txt"): join(media_dir, "HIP", "HIP15.png"),
-
+#         join(tweets_dir, "hip", "hip20.txt"): join(media_dir, "HIP", "HIP20.png"),
+# join(tweets_dir, "medium_articles", "help_i_stopped_signing.txt"): None,
 
 #    }
 

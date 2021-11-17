@@ -1,0 +1,9 @@
+🚨 @harmonyprotocol $ONE Governance Proposal🚨
+
+HIP-20 Adding Decimal To The Staking Dashboard
+
+Proposal to add decimals to the Harmony Staking Dashboard.
+
+✍️Talk: talk.harmony.one/t/hip-20-adding-decimal-to-the-staking-dashboard/5674
+
+💙#VDaoDotOne💙

@@ -14,7 +14,7 @@ Increase validator participation in governance
 
 ✍️Talk: https://talk.harmony.one/t/hip-15-validator-governance-participation-indicator/1836
 
-#VDaoDotOne
+💙#VDaoDotOne💙
 
 """
 post_url = f"https://graph.facebook.com/{PAGE_ID}/feed"

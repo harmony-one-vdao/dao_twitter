@@ -8,4 +8,4 @@ HIP-9: Institute Last Out, First In Redelegations for Staking
 ✍️Talk: talk.harmony.one/t/hip-9-institute-last-out-first-in-redelegations-for-staking/1723
 🗳️Vote: gov.harmony.one/#/dao-mainnet/proposal/QmTy415weDCQd88QBaBYBSW6Ux75JiraMuyjwtSMEaEJBQ
 
-@harmonyprotocol $ONE #VDaoDotOne
+@harmonyprotocol $ONE 💙#VDaoDotOne💙

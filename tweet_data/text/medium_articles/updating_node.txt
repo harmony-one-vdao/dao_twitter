@@ -2,6 +2,6 @@ How to update a @harmonyprotocol $One Validator Node
 
 This is required whenever the core developers make changes to the Harmony Binary and HmyCli
 
-#VDaoDotOne
+💙#VDaoDotOne💙
 
-https://medium.com/@harmonyvalidatordao/updating-a-harmony-one-node-4037cfc441db
+medium.com/@harmonyvalidatordao/updating-a-harmony-one-node-4037cfc441db
