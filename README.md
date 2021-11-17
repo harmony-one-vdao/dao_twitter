@@ -5,7 +5,7 @@
 
 `apt install python3-pip`
 
-`pip install -r requirements.txt`
+`pip3 install -r requirements.txt`
 
 `python3 connection.py`
 

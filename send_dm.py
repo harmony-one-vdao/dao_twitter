@@ -3,7 +3,7 @@ from connection import *
 hips = ("hip14", "hip15")
 
 # Delay inbetween tweets
-DELAY = 5
+DELAY = 1
 # Big sleep if Twitter gives a Spam error.
 TAKE_A_BREAK = 1200
 
@@ -19,11 +19,13 @@ def get_users(hip: str) -> dict:
     users = open_file(dm_list).split("\n")
     rtn = {}
     for x in users:
-        x = x.split('@')[-1]
-        try:
-            rtn.update({x: twitter_api.GetUser(screen_name=x).id})
-        except twitter.error.TwitterError as e:
-            logging.error(f"Problem with User [ {x} ]\n{e}")
+        if x:
+            x = x.split('@')[-1]
+            try:
+                rtn.update({x: twitter_api.GetUser(screen_name=x).id})
+            except twitter.error.TwitterError as e:
+                logging.error(f"Problem with User [ {x} ]\n{e}")
+                rtn.update({x:0})
     return rtn
 
 
@@ -45,6 +47,10 @@ def run(hip: str) -> None:
     user_not_found = []
 
     for uname, id in users.items():
+        if id == 0:  # User not found.
+            user_not_found.append(uname)
+            continue
+
         logging.info(f"\tSending Message to:  [ {uname} ] with id [ {id} ] \n")
         result = send_direct_message(id, msg)
 
@@ -71,10 +77,6 @@ def run(hip: str) -> None:
                 result["errors"][0]["code"] == 326
             ):  # You are sending a Direct Message to users that do not follow you.'
                 not_followed_by.append(uname)
-
-            elif result["errors"][0]["code"] == 50:  # User not found.
-                user_not_found.append(uname)
-
             else:
                 logging.error(f"Dunno what happened, adding to failures..\n{result}\n")
                 retry.append(uname)
