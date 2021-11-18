@@ -49,6 +49,10 @@ tweet_data = {
 #### Use to test single tweets..
 
 # tweet_data = {
+    
+    # join(tweets_dir, "generic", "become_validator.txt"): join(
+    #     media_dir, "generic", "new_validators.jpg"
+    # ),
 
 #         join(tweets_dir, "hip", "hip20.txt"): join(media_dir, "HIP", "HIP20.png"),
 # join(tweets_dir, "medium_articles", "help_i_stopped_signing.txt"): None,
