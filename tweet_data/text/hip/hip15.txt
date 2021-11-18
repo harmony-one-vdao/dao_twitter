@@ -1,11 +1,9 @@
-🚨 Validator DAO Vote 🚨
+🥳 HIP-15 VOTE PASSED 🥳
 
-HIP-15: Validator Governance Participation Indicator
+📢 The validator community have spoken and the proposal has passed the vote!
 
-🗓️ Start: Nov 4,  2021
-🗓️ End:   Nov 18, 2021 
+▶️HIP-15: Validator Governance Participation Indicator
 
-✍️Talk: talk.harmony.one/t/hip-15-validator-governance-participation-indicator/1836
-🗳️Vote: gov.harmony.one/#/staking-mainnet/proposal/QmewxBWGsDNAMTC4q6DAzPwUkSLDpjDAqBc6JuTTZiA2D4
+🧐 gov.harmony.one/#/staking-mainnet/proposal/QmewxBWGsDNAMTC4q6DAzPwUkSLDpjDAqBc6JuTTZiA2D4
 
 @harmonyprotocol $ONE 💙#VDaoDotOne💙
