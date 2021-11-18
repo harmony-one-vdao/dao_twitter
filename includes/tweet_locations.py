@@ -48,18 +48,18 @@ tweet_data = {
 
 #### Use to test single tweets..
 
-tweet_data = {
+# tweet_data = {
 
-    join(tweets_dir, "election", "call_for_candidates.txt"): join(media_dir, "election", "call_for_candidates.png"),
+#     join(tweets_dir, "election", "call_for_candidates.txt"): join(media_dir, "election", "call_for_candidates.png"),
     
-#     join(tweets_dir, "generic", "become_validator.txt"): join(
-#         media_dir, "generic", "new_validators.jpg"
-#     ),
+# #     join(tweets_dir, "generic", "become_validator.txt"): join(
+# #         media_dir, "generic", "new_validators.jpg"
+# #     ),
 
-#         join(tweets_dir, "hip", "hip20.txt"): join(media_dir, "HIP", "HIP20.png"),
-# join(tweets_dir, "medium_articles", "help_i_stopped_signing.txt"): None,
+# #         join(tweets_dir, "hip", "hip20.txt"): join(media_dir, "HIP", "HIP20.png"),
+# # join(tweets_dir, "medium_articles", "help_i_stopped_signing.txt"): None,
 
-   }
+#    }
 
 num_tweets = len(tweet_data.keys())
 hours_between_tweets = (num_days_cycle * 24) / num_tweets
