@@ -41,7 +41,7 @@ tweet_data = {
     join(tweets_dir, "medium_articles", "updating_node.txt"): None,
     join(tweets_dir, "medium_articles", "help_i_stopped_signing.txt"): None,
     # Elections
-    join(tweets_dir, "election", "call_for_candidates.txt"): join(media_dir, "election", "call_for_candidates.png"),
+    # join(tweets_dir, "election", "call_for_candidates.txt"): join(media_dir, "election", "call_for_candidates.png"),
     # join(tweets_dir, "election", "candidates_nominated.txt"): join(media_dir, "election", "collage.jpg"),
     # join(tweets_dir, "election", "candidates_vote.txt"): join(media_dir, "election", "collage.jpg"),
 }
@@ -49,17 +49,8 @@ tweet_data = {
 #### Use to test single tweets..
 
 # tweet_data = {
-#         join(tweets_dir, "hip", "hip14.txt"): join(media_dir, "HIP", "HIP14.png"),
-#     join(tweets_dir, "hip", "hip15.txt"): join(media_dir, "HIP", "HIP15.png"),
 
-#     # join(tweets_dir, "election", "call_for_candidates.txt"): join(media_dir, "election", "call_for_candidates.png"),
-    
-# #     join(tweets_dir, "generic", "become_validator.txt"): join(
-# #         media_dir, "generic", "new_validators.jpg"
-# #     ),
-
-# #         join(tweets_dir, "hip", "hip20.txt"): join(media_dir, "HIP", "HIP20.png"),
-# # join(tweets_dir, "medium_articles", "help_i_stopped_signing.txt"): None,
+#         join(tweets_dir, "hip", "hip20.txt"): join(media_dir, "HIP", "HIP20.png"),
 
 #    }
 

@@ -1,9 +1,9 @@
 from connection import *
 
-hips = ("hip14", "hip15")
+hips = ("hip20", )
 
 # Delay inbetween tweets
-DELAY = 1
+DELAY = 0
 # Big sleep if Twitter gives a Spam error.
 TAKE_A_BREAK = 1200
 

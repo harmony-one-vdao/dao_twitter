@@ -1,9 +1,11 @@
-🚨 @harmonyprotocol $ONE Governance Proposal🚨
+🚨 Validator DAO Vote 🚨
 
 HIP-20 Adding Decimal To The Staking Dashboard
 
-Proposal to add decimals to the Harmony Staking Dashboard.
+🗓️ Start: Nov 26, 2021
+🗓️ End:   Dec 10, 2021 
 
 ✍️Talk: talk.harmony.one/t/hip-20-adding-decimal-to-the-staking-dashboard/5674
+🗳️Vote: gov.harmony.one/#/dao-mainnet/proposal/QmTzqwz6acqpEExRgSZ49dVa5516sFEJ4iSHJeJ8Xnf3yT
 
-💙#VDaoDotOne💙
+💙#VDaoDotOne💙 @harmonyprotocol $ONE 
