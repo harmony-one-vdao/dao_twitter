@@ -8,4 +8,4 @@ HIP-20 Adding Decimal To The Staking Dashboard
 ✍️Talk: talk.harmony.one/t/hip-20-adding-decimal-to-the-staking-dashboard/5674
 🗳️Vote: gov.harmony.one/#/dao-mainnet/proposal/QmTzqwz6acqpEExRgSZ49dVa5516sFEJ4iSHJeJ8Xnf3yT
 
-💙#VDaoDotOne💙 @harmonyprotocol $ONE 
+💙#VDaoDotOne💙 @harmonyprotocol $ONE  

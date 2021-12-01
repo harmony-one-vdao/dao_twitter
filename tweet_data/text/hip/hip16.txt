@@ -6,4 +6,4 @@ This proposal will increase the number of validators and maintain decentralisati
 
 ✍️Talk: talk.harmony.one/t/hip-16-enforce-a-6-4-max-key-per-shard-limit-for-each-validator/6454
 
-💙#VDaoDotOne💙 @harmonyprotocol $ONE 
+💙#VDaoDotOne💙 @harmonyprotocol $ONE  

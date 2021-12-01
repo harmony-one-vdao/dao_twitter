@@ -1,0 +1,9 @@
+🚨 VDAO Governance Proposal🚨
+
+HIP-23: Fixing ER, Taking Commission Into Account
+
+In the current staking dashboard, the ER does not take the commission of the validator into account.
+
+✍️Talk: talk.harmony.one/t/hip-23-fixing-er-taking-commission-into-account/6530
+
+💙#VDaoDotOne💙 @harmonyprotocol $ONE

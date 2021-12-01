@@ -6,4 +6,4 @@ Add a “governance” flag to validators to indicate if their delegated ONE sho
 
 ✍️Talk: talk.harmony.one/t/hip-21-governance-flag-proposals/4286
 
-💙#VDaoDotOne💙 @harmonyprotocol $ONE
+💙#VDaoDotOne💙 @harmonyprotocol $ONE 
