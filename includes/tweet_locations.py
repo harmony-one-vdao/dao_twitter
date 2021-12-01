@@ -52,8 +52,8 @@ tweet_data = {
 
 # tweet_data = {
 
-#         join(tweets_dir, "hip", "hip22.txt"): join(media_dir, "HIP", "HIP22.png"),
-
+#         # join(tweets_dir, "hip", "hip22.txt"): join(media_dir, "HIP", "HIP22.png"),
+# join(tweets_dir, "generic", "connect.txt"): join(media_dir, "generic", "Dao.png"),
 #    }
 
 num_tweets = len(tweet_data.keys())
