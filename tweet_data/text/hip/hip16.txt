@@ -1,11 +1,9 @@
-🚨 @harmonyprotocol $ONE Governance Proposal🚨
+🚨 VDAO Governance Proposal🚨
 
-HIP 16:Reducing BLS keys
+HIP-16: Enforce a 6.4% max key per shard limit for each validator
 
-Proposing a method to further limit the amount of BLS keys a validator can have.
+This proposal will increase the number of validators and maintain decentralisation.
 
-This will increase the number of validators and maintain decentralisation.
+✍️Talk: talk.harmony.one/t/hip-16-enforce-a-6-4-max-key-per-shard-limit-for-each-validator/6454
 
-✍️Talk: https://talk.harmony.one/t/hip-16-reducing-bls-keys/2014
-
-💙#VDaoDotOne💙
+💙#VDaoDotOne💙 @harmonyprotocol $ONE 

@@ -1,0 +1,9 @@
+🚨 VDAO Governance Proposal🚨
+
+HIP-21: Governance Flag Proposals
+
+Add a “governance” flag to validators to indicate if their delegated ONE should be counted towards or excluded from governance voting. 
+
+✍️Talk: talk.harmony.one/t/hip-21-governance-flag-proposals/4286
+
+💙#VDaoDotOne💙 @harmonyprotocol $ONE
