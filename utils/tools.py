@@ -1,4 +1,4 @@
-def open_file(fn, remove_links=False):
+def open_file(fn: str, remove_links: bool = False, reminder: bool = False) -> str:
     with open(fn, "r", encoding="utf8") as f:
         data = f.readlines()
         # print(data)
@@ -7,6 +7,9 @@ def open_file(fn, remove_links=False):
         else:
             rtn = ""
             for x in data:
+                if reminder:
+                    if "Vote" in x.split():
+                        x = "🚨 REMINDER: Validator DAO Vote 🚨"
                 if x.startswith(("✍️", "Talk", "🗳️")):
                     break
                 else:

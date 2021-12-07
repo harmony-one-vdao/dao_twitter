@@ -19,7 +19,7 @@ def post_to_twitter_facebook(dry_run: bool = False) -> None:
                 logging.info(f"Success!!\n\n{status.text}\n")
         except (FileNotFoundError, twitter.error.TwitterError) as e:
             logging.error(f"ERROR  ::  {e}\n\n{to_post}\n")
-        logging.info(f"sleeping for {SLEEP} seconds..") 
+        logging.info(f"sleeping for {SLEEP} seconds..")
         sleep(SLEEP)
 
 
