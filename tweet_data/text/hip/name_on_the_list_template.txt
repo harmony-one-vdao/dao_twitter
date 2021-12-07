@@ -1,0 +1,21 @@
+We are still lacking participation for the following HIP proposal.
+
+If you are a validator and your name is on this list - Please VOTE!
+
+If you are staking with a validator and their name is on this list - Please Encourage them to VOTE!
+
+Participation in voting is crucial to the dencentralisation of the protocol so please use your voice!
+
+https://docs.google.com/spreadsheets/d/1EkIQ45pnWnljSB2va7_9c7RqOrxpqZRhdJMd3I94Acs/edit#gid=155153328
+
+🚨 Validator DAO Vote 🚨
+
+HIP-20 Adding Decimal To The Staking Dashboard
+
+🗓 Start: Nov 26, 2021
+🗓 End:   Dec 10, 2021 
+
+✍️Talk: talk.harmony.one/t/hip-20-adding-decimal-to-the-staking-dashboard/5674
+🗳Vote: gov.harmony.one/#/dao-mainnet/proposal/QmTzqwz6acqpEExRgSZ49dVa5516sFEJ4iSHJeJ8Xnf3yT
+
+💙#VDaoDotOne💙 @harmonyprotocol $ONE
