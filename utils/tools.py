@@ -9,7 +9,7 @@ def open_file(fn: str, remove_links: bool = False, reminder: bool = False) -> st
             for x in data:
                 if reminder:
                     if "Vote" in x.split():
-                        x = "🚨 REMINDER: Validator DAO Vote 🚨"
+                        x = "🚨 REMINDER: Validator DAO Vote 🚨\n"
                 if x.startswith(("✍️", "Talk", "🗳️")):
                     break
                 else:
