@@ -1,9 +1,11 @@
-🚨 @harmonyprotocol $ONE Governance Proposal🚨
+🚨 V-Dao Vote 🚨
 
 HIP-17: Blacklist for malicious ONE Wallet Addresses
 
-This proposal is to react and blacklist malicious wallets which are used for a rug pull on the harmony network.
+🗓️ Start: Dec 15, 2021
+🗓️ End:   Dec 29, 2021 
 
-✍️Talk: talk.harmony.one/t/hip-17-blacklist-for-malicious-one-wallet-addresses/3272
+✍️Talk: talk.harmony.one/t/hip-17-blacklist
+🗳️Vote: gov.harmony.one/#/staking-mainnet/proposal/QmR1CoazT5suvF1zU2Dk4ZPNiF6GDKUzQkcX3ABENAHjQb
 
-💙#VDaoDotOne💙
+💙#VDaoDotOne💙 @harmonyprotocol $ONE  

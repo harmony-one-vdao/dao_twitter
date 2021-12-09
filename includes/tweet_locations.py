@@ -1,6 +1,9 @@
 from os.path import join
 from time import sleep
 import logging
+from utils.tools import calc_extra_images
+
+from glob import glob
 
 logging.basicConfig(format="[%(levelname)s] - %(message)s", level=logging.INFO)
 
@@ -9,6 +12,7 @@ num_days_cycle = 3
 tweets_dir = join("tweet_data", "text")
 media_dir = join("tweet_data", "media")
 
+spaces_len = len(glob(join(media_dir, "spaces", "*.jpg")))
 
 tweet_data = {
     # HIP Proposals
@@ -49,17 +53,21 @@ tweet_data = {
     # join(tweets_dir, "election", "call_for_candidates.txt"): join(media_dir, "election", "call_for_candidates.png"),
     # join(tweets_dir, "election", "candidates_nominated.txt"): join(media_dir, "election", "collage.jpg"),
     # join(tweets_dir, "election", "candidates_vote.txt"): join(media_dir, "election", "collage.jpg"),
+    # Spaces
+    join(tweets_dir, "spaces", "spaces.txt"): [
+        join(media_dir, "spaces", f"spaces{x}.jpg") for x in range(1, spaces_len + 1)
+    ],
 }
 
 #### Use to test single tweets..
 
 # tweet_data = {
-
 #         # join(tweets_dir, "hip", "hip22.txt"): join(media_dir, "HIP", "HIP22.png"),
-# join(tweets_dir, "generic", "connect.txt"): join(media_dir, "generic", "Dao.png"),
+# join(tweets_dir, "spaces", "spaces.txt"): [join(media_dir, "spaces", f"spaces{x}.jpg") for x in range(1, spaces_len + 1)],
 #    }
 
-num_tweets = len(tweet_data.keys())
+
+num_tweets = len(tweet_data.keys()) + calc_extra_images(tweet_data)
 hours_between_tweets = (num_days_cycle * 24) / num_tweets
 seconds_between_tweets = hours_between_tweets * 60 * 60
 
