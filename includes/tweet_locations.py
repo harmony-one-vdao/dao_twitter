@@ -63,7 +63,10 @@ tweet_data = {
 
 # tweet_data = {
 #         # join(tweets_dir, "hip", "hip22.txt"): join(media_dir, "HIP", "HIP22.png"),
-# join(tweets_dir, "spaces", "spaces.txt"): [join(media_dir, "spaces", f"spaces{x}.jpg") for x in range(1, spaces_len + 1)],
+# # join(tweets_dir, "spaces", "spaces.txt"): [join(media_dir, "spaces", f"spaces{x}.jpg") for x in range(1, spaces_len + 1)],
+# join(tweets_dir, "generic", "become_validator.txt"): join(
+#         media_dir, "generic", "new_validators.jpg"
+#     ),
 #    }
 
 
