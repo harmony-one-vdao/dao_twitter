@@ -16,11 +16,12 @@ spaces_len = len(glob(join(media_dir, "spaces", "*.jpg")))
 
 tweet_data = {
     # HIP Proposals
-    join(tweets_dir, "hip", "hip13.txt"): join(media_dir, "HIP", "HIP13.png"),
+    
     # join(tweets_dir, "hip", "hip9.txt"): join(media_dir, "HIP", "HIP9.png"),
     join(tweets_dir, "hip", "hip10.txt"): join(media_dir, "HIP", "HIP10.png"),
     join(tweets_dir, "hip", "hip11.txt"): join(media_dir, "HIP", "HIP11.png"),
     # join(tweets_dir, "hip", "hip12.txt"): join(media_dir, "HIP", "HIP12.png"),
+    join(tweets_dir, "hip", "hip13.txt"): join(media_dir, "HIP", "HIP13.png"),
     # join(tweets_dir, "hip", "hip14.txt"): join(media_dir, "HIP", "HIP14.png"),
     # join(tweets_dir, "hip", "hip15.txt"): join(media_dir, "HIP", "HIP15.png"),
     join(tweets_dir, "hip", "hip16.txt"): join(
@@ -58,17 +59,6 @@ tweet_data = {
         join(media_dir, "spaces", f"spaces{x}.jpg") for x in range(1, spaces_len + 1)
     ],
 }
-
-#### Use to test single tweets..
-
-# tweet_data = {
-#         # join(tweets_dir, "hip", "hip22.txt"): join(media_dir, "HIP", "HIP22.png"),
-# # join(tweets_dir, "spaces", "spaces.txt"): [join(media_dir, "spaces", f"spaces{x}.jpg") for x in range(1, spaces_len + 1)],
-# join(tweets_dir, "generic", "become_validator.txt"): join(
-#         media_dir, "generic", "new_validators.jpg"
-#     ),
-#    }
-
 
 num_tweets = len(tweet_data.keys()) + calc_extra_images(tweet_data)
 hours_between_tweets = (num_days_cycle * 24) / num_tweets
