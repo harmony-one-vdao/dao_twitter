@@ -1,6 +1,7 @@
 from connection import *
+from utils.tools import open_file
 
-hips = ("hip20",)
+hips = ("hip17",)
 
 # Delay inbetween tweets
 DELAY = 0

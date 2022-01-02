@@ -1,3 +1,7 @@
+Please vote on the following proposal.
+
+It is important for decentralisation to make your voice heard.
+
 🚨 V-Dao Vote 🚨
 
 HIP-17: Blacklist for malicious ONE Wallet Addresses

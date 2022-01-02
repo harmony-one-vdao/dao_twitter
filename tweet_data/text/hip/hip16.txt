@@ -2,10 +2,10 @@
 
 HIP-16: Enforce a 6.4% max key per shard limit for each validator
 
-🗓️ Start: Dec 15, 2021
-🗓️ End:   Dec 29, 2021 
+🗓️ Start: Dec 24, 2021
+🗓️ End:   Jan 07, 2022 
 
 ✍️Talk: talk.harmony.one/t/hip-16-enforce-a-6-4-max-key-per-shard-limit-for-each-validator
-🗳️Vote: gov.harmony.one/#/staking-mainnet/proposal/QmPmHnuS1ayrBJ9cL16S39xiUbwcSKx5hnPKFLVKtN489o
+🗳️Vote: gov.harmony.one/#/staking-mainnet/proposal/QmPxUyTGqmEmBi4p1cvvoUg8aXy5oGbhC2R7VS6o8jEHVM
 
 💙#VDaoDotOne💙 @harmonyprotocol $ONE  

@@ -1,8 +1,9 @@
-🚨 VDAO Governance Proposal🚨
+🚨 VDAO Vote🚨
 
 HIP-22: Show "All Eligible" by default on the staking portal
 
-This Proposal is to show All Eligible validators by default on the Harmony Staking Dashboard.
+🗓️ Start: Dec 15, 2021
+🗓️ End:   Dec 29, 2021 
 
 ✍️Talk: talk.harmony.one/t/hip-22-show-all-eligible-by-default-on-the-staking-portal/5810
 
