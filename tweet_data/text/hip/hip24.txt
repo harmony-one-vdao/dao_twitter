@@ -1,0 +1,9 @@
+🚨 VDAO Governance Proposal🚨
+
+HIP-24: Harmony testnets (Devnet + Testnet)
+
+This proposal is to formalize the grant for running 2 testnets for Harmony Foundation.
+
+✍️Talk: talk.harmony.one/t/hip-24-harmony-testnets-devnet-testnet/5833
+
+💙#VDaoDotOne💙 @harmonyprotocol $ONE

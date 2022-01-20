@@ -24,9 +24,9 @@ tweet_data = {
     join(tweets_dir, "hip", "hip13.txt"): join(media_dir, "HIP", "HIP13.png"),
     # join(tweets_dir, "hip", "hip14.txt"): join(media_dir, "HIP", "HIP14.png"),
     # join(tweets_dir, "hip", "hip15.txt"): join(media_dir, "HIP", "HIP15.png"),
-    join(tweets_dir, "hip", "hip16.txt"): join(
-        media_dir, "HIP", "HIP16.png"
-    ),  # reserved for BLSKeys
+    # join(tweets_dir, "hip", "hip16.txt"): join(
+    #     media_dir, "HIP", "HIP16.png"
+    # ),  # reserved for BLSKeys
     # join(tweets_dir, "hip", "hip17.txt"): join(media_dir, "HIP", "HIP17.png"),
     # join(tweets_dir, "hip", "hip18.txt"): join(media_dir, "HIP", "HIP18.png"), # ON HOLD
     join(tweets_dir, "hip", "hip19.txt"): join(media_dir, "HIP", "HIP19.png"),
@@ -34,6 +34,8 @@ tweet_data = {
     join(tweets_dir, "hip", "hip21.txt"): join(media_dir, "HIP", "HIP21.png"),
     # join(tweets_dir, "hip", "hip22.txt"): join(media_dir, "HIP", "HIP22.png"),
     join(tweets_dir, "hip", "hip23.txt"): join(media_dir, "HIP", "HIP23.png"),
+    join(tweets_dir, "hip", "hip24.txt"): join(media_dir, "HIP", "HIP24.png"),
+    join(tweets_dir, "hip", "hip25.txt"): join(media_dir, "HIP", "HIP25.png"),
     # DAO Specific
     # join(tweets_dir, "hip", "charter.txt"): join(media_dir, "HIP", "charter.png"),
     # generic
@@ -45,15 +47,24 @@ tweet_data = {
         media_dir, "generic", "new_validators.jpg"
     ),
     join(tweets_dir, "generic", "connect.txt"): join(media_dir, "generic", "Dao.png"),
+    join(tweets_dir, "generic", "contact_details.txt"): None,
     # medium articles
     join(tweets_dir, "medium_articles", "volumes_expand.txt"): None,
     join(tweets_dir, "medium_articles", "what_is_vdao.txt"): None,
     join(tweets_dir, "medium_articles", "updating_node.txt"): None,
     join(tweets_dir, "medium_articles", "help_i_stopped_signing.txt"): None,
+    join(tweets_dir, "medium_articles", "setup_on_testnet.txt"): None,
+    join(tweets_dir, "medium_articles", "dve.txt"): None,
+    join(tweets_dir, "medium_articles", "hetzner.txt"): None,
+    join(tweets_dir, "medium_articles", "ovh.txt"): None,
+    join(tweets_dir, "medium_articles", "all_guides.txt"): None,
+
+
     # Elections
     # join(tweets_dir, "election", "call_for_candidates.txt"): join(media_dir, "election", "call_for_candidates.png"),
-    # join(tweets_dir, "election", "candidates_nominated.txt"): join(media_dir, "election", "collage.jpg"),
-    # join(tweets_dir, "election", "candidates_vote.txt"): join(media_dir, "election", "collage.jpg"),
+    # join(tweets_dir, "election", "candidates_nominated.txt"): join(media_dir, "election", "candidates.png"),
+    # join(tweets_dir, "election", "candidates_vote.txt"): join(media_dir, "election", "candidates.png"),
+    
     # Spaces
     join(tweets_dir, "spaces", "spaces.txt"): [
         join(media_dir, "spaces", f"spaces{x}.jpg") for x in range(1, spaces_len + 1)

@@ -1,0 +1,13 @@
+⭐️ Advanced Node Setup with Hetzner ⭐️
+
+📢@harmonyprotocol $ONE Validators
+
+✅ Hetzner provides powerful servers for a low price.
+
+🆘 These require some extra steps.
+
+🎓Check out the guide
+
+🔖medium.com/@harmonyvalidatordao/hetzner-server-setup-c8d8dfa9c889
+
+💙#VDaoDotOne💙

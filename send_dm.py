@@ -1,7 +1,8 @@
 from connection import *
 from utils.tools import open_file
 
-hips = ("hip17",)
+hips = ("vdao1",)
+_dir =  "election"
 
 # Delay inbetween tweets
 DELAY = 0
@@ -9,8 +10,8 @@ DELAY = 0
 TAKE_A_BREAK = 1200
 
 
-def get_message(hip: str, **kw) -> str:
-    location = join(tweets_dir, "hip", f"{hip}.txt")
+def get_message(hip: str, _dir:str, **kw) -> str:
+    location = join(tweets_dir, _dir, f"{hip}.txt")
     message = open_file(location, **kw)
     logging.info(message)
     return message
@@ -43,8 +44,8 @@ def send_direct_message(_id: int, msg: str) -> None:
         return {"errors": e}
 
 
-def run(hip: str, **kw) -> None:
-    msg = get_message(hip, **kw)
+def run(hip: str, _dir:str, **kw) -> None:
+    msg = get_message(hip, _dir,  **kw)
     users = get_users(hip)
 
     retry = []
@@ -107,4 +108,4 @@ def save_error_or_failed_dms(hip: str, _type: str, data: list) -> None:
 
 if __name__ == "__main__":
     for hip in hips:
-        run(hip, **dict(remove_links=True, reminder=True))
+        run(hip, _dir, **dict(remove_links=True, reminder=True))

@@ -1,0 +1,9 @@
+🚨VDAO Governance Proposal🚨
+
+HIP-25: Validator DAO Bootstrap Initiative
+
+Harmony Protocol has mandated that the Validator DAO bootstrap Validators to achieve diverse validator profiles.
+
+✍️Talk: talk.harmony.one/t/hip-25-validator-dao-bootstrap-initiative/7758
+
+💙#VDaoDotOne💙 @harmonyprotocol $ONE

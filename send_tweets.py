@@ -31,13 +31,13 @@ def post_to_twitter_facebook(tweet_data: dict, dry_run: bool = False) -> None:
         sleep(SLEEP)
 
 
-#### Use to test single tweets..
+#### Uncomment to test single tweets..
 
 # tweet_data = {
-#          join(tweets_dir, "hip", "hip16.txt"): join(
-#        media_dir, "HIP", "HIP16.png"
-#    ), 
-#    }
+
+# #    join(tweets_dir, "generic", "contact_details.txt"): None,
+#     join(tweets_dir, "medium_articles", "all_guides.txt"): None,
+# }
 
 while True:
     logging.info("Starting New Tweet Cycle")
