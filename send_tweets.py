@@ -35,10 +35,13 @@ def post_to_twitter_facebook(tweet_data: dict, dry_run: bool = False) -> None:
 
 # tweet_data = {
 
-# #    join(tweets_dir, "generic", "contact_details.txt"): None,
-#     join(tweets_dir, "medium_articles", "all_guides.txt"): None,
+#     # join(tweets_dir, "hip", "hip16.txt"): join(
+#     #     media_dir, "HIP", "HIP16.png"
+#     # )
+#     join(tweets_dir, "election", "vdao1.txt"): None,
 # }
 
+# Run the Show..
 while True:
     logging.info("Starting New Tweet Cycle")
     data = deepcopy(tweet_data)
