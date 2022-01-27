@@ -1,8 +1,8 @@
 🚨 V-Dao Vote 🚨
 
-HIP-16: Enforce a 6.4% max key per shard limit for each validator
+HIP-16: Enforce a 6% max key per shard limit for each validator
 
-🗓️ Start: Jan 18, 2021
+🗓️ Start: Jan 18, 2022
 🗓️ End:   Feb 01, 2022 
 
 ✍️Talk: talk.harmony.one/t/hip-16-enforce-a-6-4-max-key-per-shard-limit-for-each-validator

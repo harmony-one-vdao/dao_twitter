@@ -1,9 +1,11 @@
-🚨VDAO Governance Proposal🚨
+🚨 V-Dao Vote 🚨
 
 HIP-25: Validator DAO Bootstrap Initiative
 
-Harmony Protocol has mandated that the Validator DAO bootstrap Validators to achieve diverse validator profiles.
+🗓️ Start: Jan 23, 2022
+🗓️ End:   Feb 06, 2022 
 
 ✍️Talk: talk.harmony.one/t/hip-25-validator-dao-bootstrap-initiative/7758
+🗳️Vote: gov.harmony.one/#/staking-mainnet/proposal/Qmc61Qv6AvW2GCPkNHEedzYi57pJTVNwA5dgoL89ccwCE9
 
-💙#VDaoDotOne💙 @harmonyprotocol $ONE
+💙#VDaoDotOne💙 @harmonyprotocol $ONE  

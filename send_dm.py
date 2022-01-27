@@ -1,8 +1,8 @@
 from connection import *
 from utils.tools import open_file
 
-hips = ("vdao1",)
-_dir =  "election"
+hips = ("hip25",)
+_dir =  "hip"
 
 # Delay inbetween tweets
 DELAY = 0
