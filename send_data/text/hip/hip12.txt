@@ -1,0 +1,13 @@
+🚨 Validator DAO Vote 🚨
+
+Vote for HIP-12: Vote equality
+
+Summary : This proposal is to make the vote equal and not stake weight based.
+
+🗓️ Start: Sep 10, 2021
+🗓️ End:   Sep 24, 2021 
+
+✍️Talk: https://talk.harmony.one/t/hip-12-vote-equality/1781
+🗳️Vote: https://gov.harmony.one/#/staking-mainnet/proposal/QmPYGvNRkkn1Jf7Dvz7yP3FDLjXpkFDubMKiXvnwm1r6Vd
+
+💙#VDaoDotOne💙@harmonyprotocol $ONE

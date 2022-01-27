@@ -1,22 +1,13 @@
 from os.path import join
 from time import sleep
-import logging
 from utils.tools import calc_extra_images
-
+from includes.config import *
 from glob import glob
-
-logging.basicConfig(format="[%(levelname)s] - %(message)s", level=logging.INFO)
-
-num_days_cycle = 3
-
-tweets_dir = join("tweet_data", "text")
-media_dir = join("tweet_data", "media")
 
 spaces_len = len(glob(join(media_dir, "spaces", "*.jpg")))
 
-tweet_data = {
+send_data = {
     # HIP Proposals
-    
     # join(tweets_dir, "hip", "hip9.txt"): join(media_dir, "HIP", "HIP9.png"),
     join(tweets_dir, "hip", "hip10.txt"): join(media_dir, "HIP", "HIP10.png"),
     join(tweets_dir, "hip", "hip11.txt"): join(media_dir, "HIP", "HIP11.png"),
@@ -33,7 +24,7 @@ tweet_data = {
     # join(tweets_dir, "hip", "hip20.txt"): join(media_dir, "HIP", "HIP20.png"),
     join(tweets_dir, "hip", "hip21.txt"): join(media_dir, "HIP", "HIP21.png"),
     # join(tweets_dir, "hip", "hip22.txt"): join(media_dir, "HIP", "HIP22.png"),
-    join(tweets_dir, "hip", "hip23.txt"): join(media_dir, "HIP", "HIP23.png"), 
+    join(tweets_dir, "hip", "hip23.txt"): join(media_dir, "HIP", "HIP23.png"),
     join(tweets_dir, "hip", "hip24.txt"): join(media_dir, "HIP", "HIP24.png"),
     join(tweets_dir, "hip", "hip25.txt"): join(media_dir, "HIP", "HIP25.png"),
     # DAO Specific
@@ -58,20 +49,17 @@ tweet_data = {
     join(tweets_dir, "medium_articles", "hetzner.txt"): None,
     join(tweets_dir, "medium_articles", "ovh.txt"): None,
     join(tweets_dir, "medium_articles", "all_guides.txt"): None,
-
-
     # Elections
     # join(tweets_dir, "election", "call_for_candidates.txt"): join(media_dir, "election", "call_for_candidates.png"),
     # join(tweets_dir, "election", "candidates_nominated.txt"): join(media_dir, "election", "candidates.png"),
     # join(tweets_dir, "election", "candidates_vote.txt"): join(media_dir, "election", "candidates.png"),
-    
     # Spaces
     join(tweets_dir, "spaces", "spaces.txt"): [
         join(media_dir, "spaces", f"spaces{x}.jpg") for x in range(1, spaces_len + 1)
     ],
 }
 
-num_tweets = len(tweet_data.keys()) + calc_extra_images(tweet_data)
+num_tweets = len(send_data.keys()) + calc_extra_images(send_data)
 hours_between_tweets = (num_days_cycle * 24) / num_tweets
 seconds_between_tweets = hours_between_tweets * 60 * 60
 

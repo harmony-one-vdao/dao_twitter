@@ -1,8 +1,14 @@
 from connection import *
-from utils.tools import open_file
+from utils.tools import open_file, get_message
 
-hips = ("hip25",)
-_dir =  "hip"
+hips = (
+    # "hip0", # Test
+    "hip25",
+    "hip16",
+    "vdao1",
+)
+
+_dir = "hip"
 
 # Delay inbetween tweets
 DELAY = 0
@@ -10,15 +16,8 @@ DELAY = 0
 TAKE_A_BREAK = 1200
 
 
-def get_message(hip: str, _dir:str, **kw) -> str:
-    location = join(tweets_dir, _dir, f"{hip}.txt")
-    message = open_file(location, **kw)
-    logging.info(message)
-    return message
-
-
 def get_users(hip: str) -> dict:
-    dm_list = join("tweet_data", "dm_list", f"{hip}.txt")
+    dm_list = join("send_data", "dm_list", f"{hip}.txt")
     users = open_file(dm_list).split("\n")
     rtn = {}
     for x in users:
@@ -44,8 +43,8 @@ def send_direct_message(_id: int, msg: str) -> None:
         return {"errors": e}
 
 
-def run(hip: str, _dir:str, **kw) -> None:
-    msg = get_message(hip, _dir,  **kw)
+def run(hip: str, _dir: str, **kw) -> None:
+    msg = get_message(hip, _dir, **kw)
     users = get_users(hip)
 
     retry = []
@@ -100,7 +99,7 @@ def save_error_or_failed_dms(hip: str, _type: str, data: list) -> None:
     sep = "-"
     if not hip:
         sep = ""
-    dm_list = join("tweet_data", "dm_list", f"{hip}{sep}{_type}.txt")
+    dm_list = join("send_data", "dm_list", f"{hip}{sep}{_type}.txt")
     with open(dm_list, "w") as f:
         for x in data:
             f.write(f"@{x}\n")

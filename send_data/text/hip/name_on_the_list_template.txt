@@ -25,5 +25,5 @@ HIP-16: Enforce a 6% max keys per shard limit for each validator
 
 -------------------------------------------------------------
 Vote to retroactively fund VDAO1
-🗓 End:  February 31, 2022 / 6pm UTC 
+🗓 End:  January 31, 2022 / 6pm UTC 
 🗳Vote: https://gov.harmony.one/#/dao-mainnet/proposal/QmXxJLDbJZ3RcuW5g2PuuhgEot3eihkNjiyYUJmU9YUaqs

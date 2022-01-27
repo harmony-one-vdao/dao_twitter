@@ -4,12 +4,12 @@ from copy import deepcopy
 from utils.tools import create_tweet_list, open_file
 
 
-def post_to_twitter_facebook(tweet_data: dict, dry_run: bool = False) -> None:
+def post_to_twitter_facebook(send_data: dict, dry_run: bool = False) -> None:
 
-    _tweets = create_tweet_list(tweet_data)
+    _tweets = create_tweet_list(send_data)
 
     for text in _tweets:
-        media_path = tweet_data[text]
+        media_path = send_data[text]
         if isinstance(media_path, list) and len(media_path) > 0:
             media_path = media_path.pop()
         logging.info("-" * 80)
@@ -33,7 +33,7 @@ def post_to_twitter_facebook(tweet_data: dict, dry_run: bool = False) -> None:
 
 #### Uncomment to test single tweets..
 
-# tweet_data = {
+# send_data = {
 
 #     # join(tweets_dir, "hip", "hip16.txt"): join(
 #     #     media_dir, "HIP", "HIP16.png"
@@ -44,6 +44,6 @@ def post_to_twitter_facebook(tweet_data: dict, dry_run: bool = False) -> None:
 # Run the Show..
 while True:
     logging.info("Starting New Tweet Cycle")
-    data = deepcopy(tweet_data)
+    data = deepcopy(send_data)
     post_to_twitter_facebook(data, dry_run=False)
     logging.info("Ending Tweet Cycle.. Preparing new...")

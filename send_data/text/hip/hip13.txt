@@ -1,0 +1,9 @@
+🚨 @harmonyprotocol $ONE Governance Proposal🚨
+
+HIP-13: Validator Delegation Pooling
+
+**Allow two validators to combine staking pools to encourage the growth of validator ecosystem **
+
+✍️Talk: https://talk.harmony.one/t/hip-13-validator-delegation-pooling/1811
+
+💙#VDaoDotOne💙

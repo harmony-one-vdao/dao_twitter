@@ -1,9 +1,0 @@
-🚨 @harmonyprotocol $ONE Governance Proposal🚨
-
-HIP 11: Decentralization Support Meter
-
-We would like to create a metric on the dashboard that highlights Validators that are supporting decentralization.
-
-✍️Talk: https://talk.harmony.one/t/hip-11-decentralization-support-meter/1733
-
-💙#VDaoDotOne💙
