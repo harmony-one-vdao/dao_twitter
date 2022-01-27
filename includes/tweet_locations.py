@@ -10,7 +10,7 @@ send_data = {
     # HIP Proposals
     # join(tweets_dir, "hip", "hip9.txt"): join(media_dir, "HIP", "HIP9.png"),
     join(tweets_dir, "hip", "hip10.txt"): join(media_dir, "HIP", "HIP10.png"),
-    join(tweets_dir, "hip", "hip11.txt"): join(media_dir, "HIP", "HIP11.png"),
+    # join(tweets_dir, "hip", "hip11.txt"): join(media_dir, "HIP", "HIP11.png"),
     # join(tweets_dir, "hip", "hip12.txt"): join(media_dir, "HIP", "HIP12.png"),
     join(tweets_dir, "hip", "hip13.txt"): join(media_dir, "HIP", "HIP13.png"),
     # join(tweets_dir, "hip", "hip14.txt"): join(media_dir, "HIP", "HIP14.png"),
