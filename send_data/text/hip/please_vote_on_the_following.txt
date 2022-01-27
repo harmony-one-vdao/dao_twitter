@@ -1,15 +1,50 @@
-Please vote on the following proposal.
+Hi,
+
+Please vote on the following proposals.
 
 It is important for decentralisation to make your voice heard.
 
+--------------------------------------------------------------------------
+
 🚨 V-Dao Vote 🚨
 
-HIP-17: Blacklist for malicious ONE Wallet Addresses
+HIP-25: Validator DAO Bootstrap Initiative
 
-🗓️ Start: Dec 15, 2021
-🗓️ End:   Dec 29, 2021 
+🗓️ Start: Jan 23, 2022
+🗓️ End:   Feb 06, 2022 
 
-✍️Talk: talk.harmony.one/t/hip-17-blacklist
-🗳️Vote: gov.harmony.one/#/staking-mainnet/proposal/QmR1CoazT5suvF1zU2Dk4ZPNiF6GDKUzQkcX3ABENAHjQb
+✍️Talk: talk.harmony.one/t/hip-25-validator-dao-bootstrap-initiative/7758
+🗳️Vote: gov.harmony.one/#/staking-mainnet/proposal/Qmc61Qv6AvW2GCPkNHEedzYi57pJTVNwA5dgoL89ccwCE9
 
-💙#VDaoDotOne💙 @harmonyprotocol $ONE
+💙#VDaoDotOne💙 @harmonyprotocol $ONE  
+
+--------------------------------------------------------------------------
+
+🚨Validator DAO🚨
+
+Show your support by voting!
+
+VDAO 1 first term compensation.
+
+Snapshot - DAO Mainnet
+
+🗓️ Vote: Jan 14-31, 2022
+
+✍️Talk: talk.harmony.one/t/validator-dao-term-1-compensation/4938/41
+🗳️Vote: gov.harmony.one/#/dao-mainnet/proposal/QmXxJLDbJZ3RcuW5g2PuuhgEot3eihkNjiyYUJmU9YUaqs
+
+@harmonyprotocol $ONE 💙#VDaoDotOne💙
+
+-------------------------------------------------------------------------
+
+🚨 V-Dao Vote 🚨
+
+HIP-16: Enforce a 6% max key per shard limit for each validator
+
+🗓️ Start: Jan 18, 2022
+🗓️ End:   Feb 01, 2022 
+
+✍️Talk: talk.harmony.one/t/hip-16-enforce-a-6-4-max-key-per-shard-limit-for-each-validator
+🗳️Vote: gov.harmony.one/#/staking-mainnet/proposal/QmfCBuPFnAx9N5GKBrFBtCkjyff2UzxULhwhsEcGWYdTRY
+
+💙#VDaoDotOne💙 @harmonyprotocol $ONE  

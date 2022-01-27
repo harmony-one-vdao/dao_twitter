@@ -1,9 +1,11 @@
-🚨 VDAO Governance Proposal🚨
+🚨 VDAO Governance VOTE🚨
 
 HIP-23: Fixing ER, Taking Commission Into Account
 
-In the current staking dashboard, the ER does not take the commission of the validator into account.
+🗓️ Start: Feb 04, 2022
+🗓️ End:   Feb 18, 2022 
 
 ✍️Talk: talk.harmony.one/t/hip-23-fixing-er-taking-commission-into-account/6530
+🗳️Vote: gov.harmony.one/#/staking-mainnet/proposal/QmbHEF9hQFJ66YC6fra4ehUP87gnrnjacT1CCZJ6Uu49YK
 
 💙#VDaoDotOne💙 @harmonyprotocol $ONE
