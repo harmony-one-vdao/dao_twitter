@@ -6,16 +6,22 @@ If you are staking with a validator and their name is on this list - Please Enco
 
 Participation in voting is crucial to the dencentralisation of the protocol so please use your voice!
 
-https://docs.google.com/spreadsheets/d/1EkIQ45pnWnljSB2va7_9c7RqOrxpqZRhdJMd3I94Acs/edit#gid=155153328
+https://docs.google.com/spreadsheets/d/1EkIQ45pnWnljSB2va7_9c7RqOrxpqZRhdJMd3I94Acs/edit?usp=sharing
 
-🚨 Validator DAO Vote 🚨
 
-HIP-20 Adding Decimal To The Staking Dashboard
+-------------------------------------------------------------
+HIP-25 - Validator DAO Bootstrap Initiative
+🗓 End:  February 06, 2022 / 5pm UTC 
+🗳Vote: https://gov.harmony.one/#/dao-mainnet/proposal/Qmc61Qv6AvW2GCPkNHEedzYi57pJTVNwA5dgoL89ccwCE9
+✍️Talk: https://talk.harmony.one/t/hip-25-validator-dao-bootstrap-initiative/7758
 
-🗓 Start: Nov 26, 2021
-🗓 End:   Dec 10, 2021 
+-------------------------------------------------------------
+HIP-16: Enforce a 6% max keys per shard limit for each validator
+🗓 End:  February 01, 2022 / 3pm UTC
+🗳Vote: https://gov.harmony.one/#/staking-mainnet/proposal/QmfCBuPFnAx9N5GKBrFBtCkjyff2UzxULhwhsEcGWYdTRY
+✍️Talk:  https://talk.harmony.one/t/hip-16-enforce-a-6-4-max-key-per-shard-limit-for-each-validator/6454
 
-✍️Talk: talk.harmony.one/t/hip-20-adding-decimal-to-the-staking-dashboard/5674
-🗳Vote: gov.harmony.one/#/dao-mainnet/proposal/QmTzqwz6acqpEExRgSZ49dVa5516sFEJ4iSHJeJ8Xnf3yT
-
-💙#VDaoDotOne💙 @harmonyprotocol $ONE
+-------------------------------------------------------------
+Vote to retroactively fund VDAO1
+🗓 End:  February 31, 2022 / 6pm UTC 
+🗳Vote: https://gov.harmony.one/#/dao-mainnet/proposal/QmXxJLDbJZ3RcuW5g2PuuhgEot3eihkNjiyYUJmU9YUaqs
