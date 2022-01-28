@@ -1,10 +1,20 @@
+import sys
 from os import environ
 from os.path import join
 from dotenv import load_dotenv, find_dotenv
 import logging
 
-logging.basicConfig(format="[%(levelname)s] - %(message)s", level=logging.INFO)
+file_handler = logging.FileHandler(filename=join("logs", "message.log"))
+stdout_handler = logging.StreamHandler(sys.stdout)
+handlers = [file_handler, stdout_handler]
 
+logging.basicConfig(
+    format="<%(filename)s> [%(levelname)s] - %(message)s",
+    level=logging.INFO,
+    handlers=handlers,
+)
+
+log = logging.getLogger()
 
 d = load_dotenv(find_dotenv())
 print(f"Env file Found?  ::  {d}")
@@ -30,3 +40,7 @@ AccessTokenSecret = environ["AccessTokenSecret"]
 EMAIL_SMTP = environ["EMAIL_SMTP"]
 EMAIL_FROM = environ["EMAIL_FROM"]
 EMAIL_PASS = environ["EMAIL_PASS"]
+
+# Telegram
+api_id = environ["api_id"]
+api_hash = environ["api_hash"]

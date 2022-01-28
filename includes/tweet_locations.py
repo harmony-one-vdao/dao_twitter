@@ -76,7 +76,7 @@ p = {
 
 for k, v in p.items():
     # print(f"{k}  ::  {v}")
-    logging.info(f"{' '.join(k.split('_')).title():<50}  ::   {v:<30}")
+    log.info(f"{' '.join(k.split('_')).title():<50}  ::   {v:<30}")
 
 
 # Generate

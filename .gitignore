@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+*.session
+
 dm_list/*.txt
 
 # C extensions

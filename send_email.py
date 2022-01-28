@@ -4,7 +4,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 from connection import *
-from utils.tools import open_file, get_message
+from utils.tools import get_message, get_users, get_blacklist
 
 """
 Google rate-limits but the program will keep trying until all emails are exhausted.
@@ -42,49 +42,45 @@ def send_email(subject: str, message: str, EMAIL_TO: str) -> None:
         smtp_server.login(EMAIL_FROM, EMAIL_PASS)
         ServerConnect = True
     except SMTPHeloError as e:
-        logging.error(f"Server did not reply  ::  {e}")
+        log.error(f"Server did not reply  ::  {e}")
         return False
     except SMTPAuthenticationError as e:
-        logging.error(f"Incorrect username/password combination ::  {e}")
+        log.error(f"Incorrect username/password combination ::  {e}")
         return False
     except SMTPException as e:
-        logging.error(f"Authentication failed ::  {e}")
+        log.error(f"Authentication failed ::  {e}")
         return False
 
     if ServerConnect:
         try:
             smtp_server.sendmail(EMAIL_FROM, EMAIL_TO, msg.as_string())
-            logging.info(msg.as_string())
-            logging.info("Successfully sent email")
+            log.debug(msg.as_string())
+            log.info(f"Successfully sent email to {EMAIL_TO}")
         except SMTPException as e:
-            logging.error(f"Unable to send email  ::  {e}")
+            log.error(f"Unable to send email  ::  {e}")
             return False
         finally:
             smtp_server.close()
-            logging.info("Email server connection closed")
+            log.info("Email server connection closed")
     return True
-
-
-def get_users(hip: str) -> dict:
-    dm_list = join("send_data", "email_list", f"{hip}.txt")
-    return open_file(dm_list).split(";"), dm_list
 
 
 def run(hip: str, _dir: str, subject: str = "TEST EMAIL", **kw):
     fails = ""
     msg = get_message(hip, _dir, **kw)
-    users, dm_list = get_users(hip)
+    users, dm_list = get_users(hip, "email_list", ";")
+    blacklist = get_blacklist()
     for user in users:
-        if user:
+        if user and user not in blacklist:
             res = send_email(subject, msg, user)
             if not res:
                 fails += f"{user};"
-                logging.info("Google have rate-limited.. Sleeping for 5 mins..")
+                log.info("Google have rate-limited.. Sleeping for 5 mins..")
                 sleep(300)  # 5 mins
             sleep(DELAY)
+    with open(dm_list, "w") as f:
+        f.write(fails)
     if fails:
-        with open(dm_list, "w") as f:
-            f.write(fails)
         return False
     return True
 

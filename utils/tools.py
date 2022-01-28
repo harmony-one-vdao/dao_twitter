@@ -45,8 +45,18 @@ def create_tweet_list(send_data: dict) -> list:
 def get_message(hip: str, _dir: str, **kw) -> str:
     location = join(tweets_dir, _dir, f"{hip}.txt")
     message = open_file(location, **kw)
-    logging.info(message)
+    print(message)
     return message
+
+
+def get_users(hip: str, comm_type: str, sep: str) -> dict:
+    dm_list = join("send_data", comm_type, f"{hip}.txt")
+    return open_file(dm_list).split(sep), dm_list
+
+
+def get_blacklist() -> list:
+    blacklist = join("includes", "blacklist")
+    return open_file(blacklist).split("\n")
 
 
 # l = open_file(r'C:\Users\John\Documents\GIT\Harmony\Validator Dao\dao_twitter\send_data\text\hip\hip12.txt', remove_links=True)

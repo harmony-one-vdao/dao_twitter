@@ -12,20 +12,20 @@ def post_to_twitter_facebook(send_data: dict, dry_run: bool = False) -> None:
         media_path = send_data[text]
         if isinstance(media_path, list) and len(media_path) > 0:
             media_path = media_path.pop()
-        logging.info("-" * 80)
-        logging.info(
+        log.info("-" * 80)
+        log.info(
             f'attempting to post  ::  {text}  with {"No Media added" if not media_path else media_path}'
         )
         try:
             to_post = open_file(text)
             l = len(to_post)
-            logging.info(f"Tweet Length: {l}")
+            log.info(f"Tweet Length: {l}")
             if not dry_run:
                 status = twitter_api.PostUpdate(to_post, media=media_path)
-                logging.info(f"Success!!\n\n{status.text}\n")
+                log.info(f"Success!!\n\n{status.text}\n")
         except (FileNotFoundError, twitter.error.TwitterError) as e:
-            logging.error(f"ERROR  ::  {e}\n\n{to_post}\n")
-        logging.info(
+            log.error(f"ERROR  ::  {e}\n\n{to_post}\n")
+        log.info(
             f"Sleeping for | {round(SLEEP / 60 / 60, 2)} Hours | {SLEEP // 60} Mins | {SLEEP} seconds |   "
         )
         sleep(SLEEP)
@@ -35,15 +35,15 @@ def post_to_twitter_facebook(send_data: dict, dry_run: bool = False) -> None:
 
 # send_data = {
 
-#     # join(tweets_dir, "hip", "hip16.txt"): join(
-#     #     media_dir, "HIP", "HIP16.png"
-#     # )
-#     join(tweets_dir, "election", "vdao1.txt"): None,
+#     join(tweets_dir, "hip", "hip23.txt"): join(
+#         media_dir, "HIP", "HIP23.png"
+#     )
+# #     join(tweets_dir, "election", "vdao1.txt"): None,
 # }
 
 # Run the Show..
 while True:
-    logging.info("Starting New Tweet Cycle")
+    log.info("Starting New Tweet Cycle")
     data = deepcopy(send_data)
     post_to_twitter_facebook(data, dry_run=False)
-    logging.info("Ending Tweet Cycle.. Preparing new...")
+    log.info("Ending Tweet Cycle.. Preparing new...")

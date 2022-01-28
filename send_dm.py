@@ -16,7 +16,7 @@ DELAY = 0
 TAKE_A_BREAK = 1200
 
 
-def get_users(hip: str) -> dict:
+def parse_users(hip: str) -> dict:
     dm_list = join("send_data", "dm_list", f"{hip}.txt")
     users = open_file(dm_list).split("\n")
     rtn = {}
@@ -26,7 +26,7 @@ def get_users(hip: str) -> dict:
             try:
                 rtn.update({x: twitter_api.GetUser(screen_name=x).id})
             except twitter.error.TwitterError as e:
-                logging.error(f"Problem with User [ {x} ]\n{e}")
+                log.error(f"Problem with User [ {x} ]\n{e}")
                 if x.lower() not in users:
                     users.append(x.lower())
                 else:
@@ -45,7 +45,7 @@ def send_direct_message(_id: int, msg: str) -> None:
 
 def run(hip: str, _dir: str, **kw) -> None:
     msg = get_message(hip, _dir, **kw)
-    users = get_users(hip)
+    users = parse_users(hip)
 
     retry = []
     cannot_msg = []
@@ -57,14 +57,14 @@ def run(hip: str, _dir: str, **kw) -> None:
             user_not_found.append(uname)
             continue
 
-        logging.info(f"\tSending Message to:  [ {uname} ] with id [ {id} ] \n")
+        log.info(f"\tSending Message to:  [ {uname} ] with id [ {id} ] \n")
         result = send_direct_message(id, msg)
 
         if not result.get("errors"):
-            logging.info(f"Message Result:  {result}\n")
+            log.info(f"Message Result:  {result}\n")
 
         elif result.get("errors"):
-            logging.error(f"Message ERROR:   {result}\n")
+            log.error(f"Message ERROR:   {result}\n")
 
             if (
                 result["errors"][0]["code"] == 226
@@ -84,7 +84,7 @@ def run(hip: str, _dir: str, **kw) -> None:
             ):  # You are sending a Direct Message to users that do not follow you.'
                 not_followed_by.append(uname)
             else:
-                logging.error(f"Dunno what happened, adding to failures..\n{result}\n")
+                log.error(f"Dunno what happened, adding to failures..\n{result}\n")
                 retry.append(uname)
 
         sleep(DELAY)  # arbitrary time to pause between messages
