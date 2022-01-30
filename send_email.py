@@ -15,7 +15,7 @@ subject = "🚨 Validator DAO Vote 🚨"
 hips = (
     # "hip0", # Test
     # "hip25",
-    "hip16",
+    # "hip16",
     "vdao1",
 )
 

@@ -17,8 +17,7 @@ def open_file(fn: str, remove_links: bool = False, reminder: bool = False) -> st
                 if remove_links:
                     if x.startswith(("✍️", "Talk", "🗳️")):
                         break
-                else:
-                    rtn += x
+                rtn += x
         return rtn
 
 
@@ -44,6 +43,7 @@ def create_tweet_list(send_data: dict) -> list:
 
 def get_message(hip: str, _dir: str, **kw) -> str:
     location = join(tweets_dir, _dir, f"{hip}.txt")
+    print(location)
     message = open_file(location, **kw)
     print(message)
     return message

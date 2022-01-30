@@ -9,8 +9,8 @@ Try playing with the delay if it is taking too long..
 """
 hips = (
     # "hip0", # Test
-    "hip25",
-    "hip16",
+    # "hip25",
+    # "hip16",
     "vdao1",
 )
 
@@ -56,6 +56,7 @@ async def main():
                 try:
                     await client.send_message(user, msg)
                     sent.append(user)
+                    log.info(f"Messaged Sent to User:  {user} ")
                 except Exception as e:
                     e = str(e)
                     log.error(e)

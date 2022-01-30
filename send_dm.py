@@ -3,8 +3,8 @@ from utils.tools import open_file, get_message
 
 hips = (
     # "hip0", # Test
-    "hip25",
-    "hip16",
+    # "hip25",
+    # "hip16",
     "vdao1",
 )
 
