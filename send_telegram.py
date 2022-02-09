@@ -9,15 +9,15 @@ Try playing with the delay if it is taking too long..
 """
 hips = (
     # "hip0", # Test
-    # "hip25",
+    "node_update",
     # "hip16",
-    "vdao1",
+    # "vdao1",
 )
 
-_dir = "hip"
+_dir = "node_update"
 
 # Delay inbetween messages
-DELAY = 0.2  # 5 per second
+DELAY = 1  # Per second
 
 
 async def check_flood_and_sleep(e: str) -> None:
@@ -46,6 +46,7 @@ async def main():
         msg = get_message(hip, _dir, **dict(reminder=True))
         users, dm_list = get_users(hip, "telegram_list", "\n")
         blacklist = get_blacklist()
+        # msg = "hello there.. "
         for user in users:
             if (
                 user
@@ -71,6 +72,6 @@ async def main():
 
 if __name__ == "__main__":
     try:
-        asyncio.run(main())
+        asyncio.get_event_loop().run_until_complete(main())
     except RuntimeError as e:
         log.error(f"Loop Error.. Pleae fix at somepoint..")

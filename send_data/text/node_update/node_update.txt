@@ -1,0 +1,24 @@
+🚨Mandatory Node Update - UPDATE OR YOUR NODE WILL STOP!!🚨 
+
+👉 v4.3.4 - latest release for all  @harmonyprotocol $one validators and RPC node runners.
+
+🙏 Please update your node before ♨️ epoch 870 ♨️
+
+⏰ < Feb 11 2022
+
+📃 Details👇
+
+🔹 This is a mandatory update to enable the Metamask Staking feature at epoch 871 (expected to happen 11 Feb 2022). 
+
+🔹 Failing to do so and your node may end up stuck at epoch 870. 
+
+🔹 Release Information
+github.com/harmony-one/harmony/releases/tag/v4.3.4
+
+🔹 Update instructions:
+medium.com/@harmonyvalidatordao/updating-a-harmony-one-node-4037cfc441db
+
+🔹 Take note that v4.3.4 include the feature of v4.3.3 release so feel free to go through the release note as well : 
+https://github.com/harmony-one/harmony/releases/tag/v4.3.3 
+
+💙#VDaoDotOne💙

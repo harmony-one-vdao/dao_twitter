@@ -2,6 +2,7 @@ from smtplib import SMTPException, SMTPHeloError, SMTPAuthenticationError
 from smtplib import SMTP_SSL as SMTP  # SSL connection
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from email.mime.image import MIMEImage
 
 from connection import *
 from utils.tools import get_message, get_users, get_blacklist
@@ -10,32 +11,63 @@ from utils.tools import get_message, get_users, get_blacklist
 Google rate-limits but the program will keep trying until all emails are exhausted.
 Try playing with the delay if it is taking too long.. 
 """
-subject = "🚨 Validator DAO Vote 🚨"
+
+# subject = "🚨 Validator DAO Vote 🚨"
+# subject = "🚨Mandatory Node Update - UPDATE OR YOUR NODE WILL STOP!!🚨"
+subject = "vDAO Newsletter Feb 7th 2022"
 
 hips = (
     # "hip0", # Test
-    # "hip25",
+    # "node_update",
     # "hip16",
-    "vdao1",
+    "newsletter",
 )
 
-_dir = "hip"
+_dir = "newsletter"
+
+images = dict(page1="February7-1.png", page2="February7-2.png")
 
 # Delay inbetween tweets
 DELAY = 0.5  # 2 per second
 
 
-def send_email(subject: str, message: str, EMAIL_TO: str) -> None:
+def send_email(
+    subject: str, message: str, EMAIL_TO: str, images: dict = {}, links: list = [], **kw
+) -> None:
 
-    msg = MIMEMultipart()
+    msg = MIMEMultipart("related")
 
     msg["From"] = EMAIL_FROM
-
     msg["To"] = EMAIL_TO
     msg["Subject"] = subject
-    msg.attach(MIMEText(message))
 
+    # msg.attach(MIMEText(message))
     ServerConnect = False
+
+    message = message.replace("\n", "<br>")
+
+    html_output = f"<body><p>{message}"
+
+    if images:
+        for image_name in images:
+            html_output += f'<br><center><img src="cid:{image_name}"></center>'
+    html_output += "</p></body>"
+
+    msg.attach(MIMEText(html_output, "html"))
+
+    if images:
+        for image_name, image_location in images.items():
+            with open(join("send_data", "media", _dir, image_location), "rb") as fp:
+                img = MIMEImage(fp.read())
+            img.add_header("Content-ID", f"<{image_name}>")
+            msg.attach(img)
+
+    # if links:
+    #     for image_url in links:
+    #         html_output += f'<br><img src="{image_url}"/>'
+    # html_output += "</p></body>"
+
+    # msg.attach(MIMEText(html_output, "html"))
 
     try:
         smtp_server = SMTP(EMAIL_SMTP, "465")
@@ -72,7 +104,7 @@ def run(hip: str, _dir: str, subject: str = "TEST EMAIL", **kw):
     blacklist = get_blacklist()
     for user in users:
         if user and user not in blacklist:
-            res = send_email(subject, msg, user)
+            res = send_email(subject, msg, user, **kw)
             if not res:
                 fails += f"{user};"
                 log.info("Google have rate-limited.. Sleeping for 5 mins..")
@@ -97,4 +129,4 @@ def execute(**kw):
 if __name__ == "__main__":
     do_run = True
     while do_run:
-        do_run = execute(**dict(reminder=True, subject=subject))
+        do_run = execute(**dict(reminder=True, subject=subject, images=images))

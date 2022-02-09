@@ -1,0 +1,15 @@
+🚨Mandatory Node Update - YOUR NODE WILL STOP IF YOU DO NOT UPDATE!🚨 
+
+👉 v4.3.4 -  latest release for all  @harmonyprotocol $one validators and RPC node runners.
+
+🙏 Please update your node before ♨️ epoch 870 ♨️
+
+⏰ < Feb 11 2022
+
+📃 Details👇
+
+medium.com/@harmonyvalidatordao/updating-a-harmony-one-node-4037cfc441db
+
+github.com/harmony-one/harmony/releases/tag/v4.3.4
+
+💙#VDaoDotOne💙

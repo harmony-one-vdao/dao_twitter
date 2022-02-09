@@ -5,10 +5,10 @@ hips = (
     # "hip0", # Test
     # "hip25",
     # "hip16",
-    "vdao1",
+    "node",
 )
 
-_dir = "hip"
+_dir = "node_update"
 
 # Delay inbetween tweets
 DELAY = 0

@@ -2,7 +2,7 @@ from random import shuffle
 from includes.config import *
 
 
-def open_file(fn: str, remove_links: bool = False, reminder: bool = False) -> str:
+def open_file(fn: str, remove_links: bool = False, reminder: bool = False, **kw) -> str:
     with open(fn, "r", encoding="utf8") as f:
         data = f.readlines()
         # print(data)
