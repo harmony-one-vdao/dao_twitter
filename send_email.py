@@ -13,17 +13,17 @@ Try playing with the delay if it is taking too long..
 """
 
 # subject = "🚨 Validator DAO Vote 🚨"
-# subject = "🚨Mandatory Node Update - UPDATE OR YOUR NODE WILL STOP!!🚨"
-subject = "vDAO Newsletter Feb 7th 2022"
+subject = "🚨Mandatory Node Update - UPDATE OR YOUR NODE WILL STOP!!🚨"
+# subject = "vDAO Newsletter Feb 7th 2022"
 
 hips = (
     # "hip0", # Test
-    # "node_update",
+    "node_update",
     # "hip16",
-    "newsletter",
-)
+    # "newsletter",
+    )
 
-_dir = "newsletter"
+_dir = "node_update"
 
 images = dict(page1="February7-1.png", page2="February7-2.png")
 
@@ -61,13 +61,6 @@ def send_email(
                 img = MIMEImage(fp.read())
             img.add_header("Content-ID", f"<{image_name}>")
             msg.attach(img)
-
-    # if links:
-    #     for image_url in links:
-    #         html_output += f'<br><img src="{image_url}"/>'
-    # html_output += "</p></body>"
-
-    # msg.attach(MIMEText(html_output, "html"))
 
     try:
         smtp_server = SMTP(EMAIL_SMTP, "465")
@@ -129,4 +122,9 @@ def execute(**kw):
 if __name__ == "__main__":
     do_run = True
     while do_run:
-        do_run = execute(**dict(reminder=True, subject=subject, images=images))
+        do_run = execute(**dict(
+            reminder=True, 
+            subject=subject, 
+            # images=images
+            )
+        )

@@ -5,7 +5,7 @@ hips = (
     # "hip0", # Test
     # "hip25",
     # "hip16",
-    "node",
+    "node_update",
 )
 
 _dir = "node_update"
