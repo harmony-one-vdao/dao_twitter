@@ -13,19 +13,19 @@ Try playing with the delay if it is taking too long..
 """
 
 # subject = "🚨 Validator DAO Vote 🚨"
-subject = "🚨Mandatory Node Update - UPDATE OR YOUR NODE WILL STOP!!🚨"
-# subject = "vDAO Newsletter Feb 7th 2022"
+# subject = "🚨Mandatory Node Update - UPDATE OR YOUR NODE WILL STOP!!🚨"
+subject = "vDAO Newsletter Feb 19th 2022"
 
 hips = (
     # "hip0", # Test
-    "node_update",
+    # "node_update",
     # "hip16",
-    # "newsletter",
-    )
+    "newsletter",
+)
 
-_dir = "node_update"
+_dir = "newsletter"
 
-images = dict(page1="February7-1.png", page2="February7-2.png")
+images = dict(page1="February14-1.png", page2="February14-2.png")
 
 # Delay inbetween tweets
 DELAY = 0.5  # 2 per second
@@ -122,9 +122,10 @@ def execute(**kw):
 if __name__ == "__main__":
     do_run = True
     while do_run:
-        do_run = execute(**dict(
-            reminder=True, 
-            subject=subject, 
-            # images=images
+        do_run = execute(
+            **dict(
+                reminder=True,
+                subject=subject,
+                # images=images
             )
         )
