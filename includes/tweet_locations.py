@@ -24,9 +24,10 @@ send_data = {
     # join(tweets_dir, "hip", "hip20.txt"): join(media_dir, "HIP", "HIP20.png"),
     join(tweets_dir, "hip", "hip21.txt"): join(media_dir, "HIP", "HIP21.png"),
     # join(tweets_dir, "hip", "hip22.txt"): join(media_dir, "HIP", "HIP22.png"),
-    join(tweets_dir, "hip", "hip23.txt"): join(media_dir, "HIP", "HIP23.png"),
+    # join(tweets_dir, "hip", "hip23.txt"): join(media_dir, "HIP", "HIP23.png"),
     join(tweets_dir, "hip", "hip24.txt"): join(media_dir, "HIP", "HIP24.png"),
-    # join(tweets_dir, "hip", "hip25.txt"): join(media_dir, "HIP", "HIP25.png"),
+    # join(tweets_dir, "hip", "hip25.txt"): join(media_dir, "HIP", "HIP25.png"), 
+    join(tweets_dir, "hip", "hip26.txt"): join(media_dir, "HIP", "HIP26.png"),
     # DAO Specific
     # join(tweets_dir, "hip", "charter.txt"): join(media_dir, "HIP", "charter.png"),
     # generic

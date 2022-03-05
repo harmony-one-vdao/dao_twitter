@@ -14,7 +14,7 @@ Try playing with the delay if it is taking too long..
 
 # subject = "🚨 Validator DAO Vote 🚨"
 # subject = "🚨Mandatory Node Update - UPDATE OR YOUR NODE WILL STOP!!🚨"
-subject = "vDAO Newsletter Feb 19th 2022"
+subject = "vDAO Newsletter March 5th 2022"
 
 hips = (
     # "hip0", # Test
@@ -25,7 +25,7 @@ hips = (
 
 _dir = "newsletter"
 
-images = dict(page1="February14-1.png", page2="February14-2.png")
+images = dict(page1="February28-1.png", page2="February28-2.png") # None
 
 # Delay inbetween tweets
 DELAY = 0.5  # 2 per second
@@ -126,6 +126,6 @@ if __name__ == "__main__":
             **dict(
                 reminder=True,
                 subject=subject,
-                # images=images
+                images=images
             )
         )

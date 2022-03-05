@@ -1,0 +1,9 @@
+🚨 V-Dao Governance Proposal 🚨
+
+HIP-26: Staking Site Proposal: Change "Next Epoch" Format to "Hrs, Mins", Add Current Epoch
+
+New Epoch format on staking dashboard to “HRS, MINS” & add “CURRENT EPOCH”
+
+✍️Talk: talk.harmony.one/t/hip-26-staking-site-proposal-change-next-epoch-format-to-hrs-mins-add-current-epoch/11371?u=peaceloveharmony
+
+💙#VDaoDotOne💙 @harmonyprotocol $ONE  
