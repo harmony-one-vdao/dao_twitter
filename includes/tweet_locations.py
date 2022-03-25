@@ -28,6 +28,7 @@ send_data = {
     join(tweets_dir, "hip", "hip24.txt"): join(media_dir, "HIP", "HIP24.png"),
     # join(tweets_dir, "hip", "hip25.txt"): join(media_dir, "HIP", "HIP25.png"), 
     join(tweets_dir, "hip", "hip26.txt"): join(media_dir, "HIP", "HIP26.png"),
+    join(tweets_dir, "hip", "hip27.txt"): join(media_dir, "HIP", "HIP27.png"),
     # DAO Specific
     # join(tweets_dir, "hip", "charter.txt"): join(media_dir, "HIP", "charter.png"),
     # generic

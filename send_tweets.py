@@ -35,9 +35,7 @@ def post_to_twitter_facebook(send_data: dict, dry_run: bool = False) -> None:
 
 # send_data = {
 
-#     join(tweets_dir, "hip", "hip23.txt"): join(
-#         media_dir, "HIP", "HIP23.png"
-#     )
+#    join(tweets_dir, "hip", "hip27.txt"): join(media_dir, "HIP", "HIP27.png"),
 # #     join(tweets_dir, "election", "vdao1.txt"): None,
 # }
 
